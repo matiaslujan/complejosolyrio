@@ -67,11 +67,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionClass.vb" />
-    <Compile Include="IU\Form1.vb">
+    <Compile Include="IU\Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IU\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="IU\Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -91,8 +91,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="IU\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="IU\Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
