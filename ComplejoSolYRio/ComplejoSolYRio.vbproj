@@ -66,7 +66,9 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ReservaClass.vb" />
     <Compile Include="Clases\ServicioClass.vb" />
+    <Compile Include="Clases\ServicioReservaClass.vb" />
     <Compile Include="ConexionClass.vb" />
     <Compile Include="IU\detServicio.Designer.vb">
       <DependentUpon>detServicio.vb</DependentUpon>
