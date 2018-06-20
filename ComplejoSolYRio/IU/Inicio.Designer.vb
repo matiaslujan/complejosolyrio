@@ -26,6 +26,7 @@ Partial Class Inicio
         Me.Reserva = New System.Windows.Forms.ToolStripMenuItem
         Me.ClientesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.AdministracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MatiasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,6 +43,7 @@ Partial Class Inicio
         '
         'Reserva
         '
+        Me.Reserva.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MatiasToolStripMenuItem})
         Me.Reserva.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Reserva.Name = "Reserva"
         Me.Reserva.Size = New System.Drawing.Size(84, 25)
@@ -60,6 +62,12 @@ Partial Class Inicio
         Me.AdministracionToolStripMenuItem.Name = "AdministracionToolStripMenuItem"
         Me.AdministracionToolStripMenuItem.Size = New System.Drawing.Size(127, 25)
         Me.AdministracionToolStripMenuItem.Text = "Administracion"
+        '
+        'MatiasToolStripMenuItem
+        '
+        Me.MatiasToolStripMenuItem.Name = "MatiasToolStripMenuItem"
+        Me.MatiasToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
+        Me.MatiasToolStripMenuItem.Text = "Matias"
         '
         'Inicio
         '
@@ -82,5 +90,6 @@ Partial Class Inicio
     Friend WithEvents Reserva As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ClientesToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AdministracionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MatiasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

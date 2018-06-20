@@ -16,7 +16,7 @@ Public Class ConexionClass
 
     Public Sub Conectar()
 
-
+        'matias
         conexion.ConnectionString = "Server=LAPTOP-K16JEHVE\DEVELOPER;Database=complejosolyrio;Trusted_connection=true;"
 
 

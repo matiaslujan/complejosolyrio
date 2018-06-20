@@ -67,11 +67,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionClass.vb" />
+    <Compile Include="IU\detServicio.Designer.vb">
+      <DependentUpon>detServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\detServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="IU\Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IU\Inicio.Designer.vb">
       <DependentUpon>Inicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\listReservas.Designer.vb">
+      <DependentUpon>listReservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\listReservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\listServicios.Designer.vb">
+      <DependentUpon>listServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\listServicios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -91,8 +109,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="IU\detServicio.resx">
+      <DependentUpon>detServicio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IU\Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\listReservas.resx">
+      <DependentUpon>listReservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\listServicios.resx">
+      <DependentUpon>listServicios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -111,6 +138,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clases\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
