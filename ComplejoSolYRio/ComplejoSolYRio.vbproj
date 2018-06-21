@@ -70,10 +70,22 @@
     <Compile Include="Clases\ServicioClass.vb" />
     <Compile Include="Clases\ServicioReservaClass.vb" />
     <Compile Include="ConexionClass.vb" />
+    <Compile Include="IU\detReserva.Designer.vb">
+      <DependentUpon>detReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\detReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="IU\detServicio.Designer.vb">
       <DependentUpon>detServicio.vb</DependentUpon>
     </Compile>
     <Compile Include="IU\detServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\detServicioReserva.Designer.vb">
+      <DependentUpon>detServicioReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\detServicioReserva.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IU\Inicio.vb">
