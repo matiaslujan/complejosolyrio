@@ -66,6 +66,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ClienteClass.vb" />
     <Compile Include="Clases\ReservaClass.vb" />
     <Compile Include="Clases\ServicioClass.vb" />
     <Compile Include="ConexionClass.vb" />
@@ -75,10 +76,10 @@
     <Compile Include="IU\detReserva.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IU\detServicioReserva.Designer.vb">
-      <DependentUpon>detServicioReserva.vb</DependentUpon>
+    <Compile Include="IU\detServicio.Designer.vb">
+      <DependentUpon>detServicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="IU\detServicioReserva.vb">
+    <Compile Include="IU\detServicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IU\Inicio.vb">
@@ -111,6 +112,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="IU\detReserva.resx">
+      <DependentUpon>detReserva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\detServicio.resx">
+      <DependentUpon>detServicio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IU\Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>

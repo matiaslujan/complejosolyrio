@@ -10,35 +10,58 @@ Public Class ServicioClass
     Public Property Id() As Integer
         Get
             Return Id_
-
         End Get
-
         Set(ByVal value As Integer)
-
             Id_ = value
-
         End Set
-
     End Property
 
-    Private nombre_ As String
+    Private IdReserva_ As Integer
 
-    Public Property nombre() As String
+    Public Property IdReserva() As Integer
+        Get
+            Return IdReserva_
+        End Get
+        Set(ByVal value As Integer)
+            IdReserva_ = value
+        End Set
+    End Property
 
+    Private Fecha_ As Date
+
+    Public Property Fecha() As Date
         Get
 
-            Return nombre_
-
+            Return Fecha_
         End Get
-
-        Set(ByVal value As String)
-
-            nombre_ = value
-
+        Set(ByVal value As Date)
+            Fecha_ = value
         End Set
-
     End Property
-    Public Sub Traer(ByVal dgv As DataGridView)
+
+    Private Importe_ As Decimal
+
+    Public Property Importe() As Decimal
+        Get
+            Return Importe_
+        End Get
+        Set(ByVal value As Decimal)
+            Importe_ = value
+        End Set
+    End Property
+
+    Private Descripcion_ As String
+
+    Public Property Descripcion() As String
+        Get
+            Return Descripcion_
+        End Get
+        Set(ByVal value As String)
+            Descripcion_ = value
+        End Set
+    End Property
+
+    Public Sub Traer(ByVal dgv As DataGridView, ByVal id As Integer)
 
         Conectar()
 
@@ -46,28 +69,27 @@ Public Class ServicioClass
 
         comando.CommandType = CommandType.StoredProcedure
 
-        Dim table As New Data.DataTable
+        comando.Parameters.AddWithValue("@idreserva", id)
 
-        Dim adapter As New SqlDataAdapter(comando)
+        Dim tabla As New Data.DataTable
 
-        adapter.Fill(table)
+        Dim adaptador As New SqlDataAdapter(comando)
 
-        dgv.DataSource = table
+        adaptador.Fill(tabla)
 
-        dgv.Columns("Id").Visible = False
-
+        dgv.DataSource = tabla
 
         If dgv.RowCount > 0 Then
 
             dgv.Rows(0).Selected = False
 
         End If
-
         Desconectar()
 
     End Sub
 
-    Public Sub Agregar(ByVal servicio As ServicioClass)
+
+    Public Sub Agregar(ByVal serv As ServicioClass)
 
         Conectar()
 
@@ -75,34 +97,37 @@ Public Class ServicioClass
 
         comando.CommandType = CommandType.StoredProcedure
 
-        comando.Parameters.AddWithValue("@nombre", servicio.nombre)
+        comando.Parameters.AddWithValue("@IdReserva", serv.IdReserva)
+        comando.Parameters.AddWithValue("@Fecha", serv.Fecha)
+        comando.Parameters.AddWithValue("@Importe", serv.Importe)
+        comando.Parameters.AddWithValue("@Descripcion", serv.Descripcion)
 
         comando.ExecuteNonQuery()
 
-
         Desconectar()
-
 
     End Sub
 
-    Public Sub Modificar(ByVal servicio As ServicioClass)
-
+    Public Sub Modificar(ByVal serv As ServicioClass)
         Conectar()
 
         Dim comando As New SqlCommand("ServicioModificar", conexion)
 
         comando.CommandType = CommandType.StoredProcedure
 
-        comando.Parameters.AddWithValue("@nombre", servicio.nombre)
-
-        comando.Parameters.AddWithValue("@id", servicio.Id)
+        comando.Parameters.AddWithValue("@IdReserva", serv.IdReserva)
+        comando.Parameters.AddWithValue("@Fecha", serv.Fecha)
+        comando.Parameters.AddWithValue("@Importe", serv.Importe)
+        comando.Parameters.AddWithValue("@Descripcion", serv.Descripcion)
+        comando.Parameters.AddWithValue("@Id", serv.Id)
 
         comando.ExecuteNonQuery()
 
         Desconectar()
+
     End Sub
 
-    Public Sub Eliminar(ByVal Id As Integer)
+    Public Sub Eliminar(ByVal id As Integer)
 
         Conectar()
 
@@ -110,48 +135,8 @@ Public Class ServicioClass
 
         comando.CommandType = CommandType.StoredProcedure
 
-        comando.Parameters.AddWithValue("@id", Id)
-
+        comando.Parameters.AddWithValue("@Id", id)
         comando.ExecuteNonQuery()
-
-        Desconectar()
-
-        MsgBox("El registro a sido eliminado con exito")
-
-    End Sub
-
-    Public Sub cargarCombo(ByVal combo As ComboBox)
-        Conectar()
-
-        Dim comando As New SqlCommand("ServicioTraer", conexion)
-
-        comando.CommandType = CommandType.StoredProcedure
-
-        Dim lista As SqlDataReader = comando.ExecuteReader
-
-        Dim lista2 As New List(Of ServicioClass)
-
-        If lista.HasRows Then
-
-            While lista.Read()
-
-                Dim servicio As New ServicioClass
-
-                servicio.Id = (lista("id"))
-
-                servicio.nombre = (lista("nombre"))
-
-                lista2.Add(servicio)
-
-            End While
-
-            combo.DataSource = lista2
-
-            combo.DisplayMember = "Nombre"
-
-            combo.ValueMember = "id"
-
-        End If
 
         Desconectar()
 
