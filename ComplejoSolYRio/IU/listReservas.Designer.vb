@@ -91,7 +91,7 @@ Partial Class listReservas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DarkGreen
+        Me.BackColor = System.Drawing.Color.DarkOrange
         Me.ClientSize = New System.Drawing.Size(769, 316)
         Me.Controls.Add(Me.dgvReservas)
         Me.Controls.Add(Me.btnAgregar)

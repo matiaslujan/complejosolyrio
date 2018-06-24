@@ -146,6 +146,7 @@ Partial Class detServicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Wheat
         Me.ClientSize = New System.Drawing.Size(362, 202)
         Me.Controls.Add(Me.txtDescripcion)
         Me.Controls.Add(Me.Label5)
