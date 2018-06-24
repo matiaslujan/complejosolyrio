@@ -103,6 +103,7 @@
         reserva.CantPersonas = txtCantPer.Text
         reserva.ImpDia = txtImpDia.Text
         reserva.ImpTotal = txtTotal.Text
+        reserva.Descripcion = txtDescripcion.Text
 
 
         If Operacion = "M" Then

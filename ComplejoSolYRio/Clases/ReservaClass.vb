@@ -101,16 +101,24 @@ Public Class ReservaClass
             ImpTotal_ = value
         End Set
     End Property
+    Private Descripcion_ As String
+    Public Property Descripcion() As String
+        Get
+            Return Descripcion_
+        End Get
+        Set(ByVal value As String)
+            Descripcion_ = value
+
+        End Set
+    End Property
 
     Public Sub Traer(ByVal dgv As DataGridView)
 
         Conectar()
 
-        Dim consulta As String = "SELECT r.Id, r.FIngreso Ingreso, r.FEgreso Egreso, r.FReserva Reservado  FROM Reservas r  " _
-        & "group by r.Id,r.FIngreso, r.FEgreso,r.FReserva " _
-        & "order by r.freserva desc"
 
-        Dim comando As New SqlCommand(consulta, conexion)
+        Dim comando As New SqlCommand("ReservasTraer", conexion)
+        comando.CommandType = CommandType.StoredProcedure
 
         Dim table As New Data.DataTable
 
@@ -129,9 +137,8 @@ Public Class ReservaClass
 
         Conectar()
 
-        Dim consulta As String = "SELECT * FROM Reservas WHERE Id = @Id"
-
-        Dim comando As New SqlCommand(consulta, conexion)
+        Dim comando As New SqlCommand("ReservaDatos", conexion)
+        comando.CommandType = CommandType.StoredProcedure
 
         comando.Parameters.AddWithValue("@Id", reserva.id)
 
@@ -146,11 +153,11 @@ Public Class ReservaClass
                 reserva.Fecha = (lista("FReserva"))
                 reserva.FIngreso = (lista("FIngreso"))
                 reserva.FEgreso = (lista("FEgreso"))
-                reserva.CantPersonas = (lista("cantPersonas"))
+                reserva.CantPersonas = (lista("CantPersonas"))
                 reserva.CantDias = (lista("CantDias"))
-                reserva.ImpDia = (lista("impDia"))
+                reserva.ImpDia = (lista("ImpDia"))
                 reserva.ImpTotal = (lista("ImpTotal"))
-
+                reserva.Descripcion = (lista("Descripcion"))
             End While
 
         End If
@@ -162,10 +169,9 @@ Public Class ReservaClass
 
         Conectar()
 
-        Dim consulta As String = "INSERT INTO reservas (IdCliente,FIngreso,FEgreso,FReserva, CantDias,cantPersonas,impDia,ImpTotal)" _
-        & "values (@IdCliente,@FIngreso,@FEgreso,@FReserva, @CantDias,@cantPersonas,@impDia,@ImpTotal)"
+        Dim comando As New SqlCommand("ReservaAgregar", conexion)
 
-        Dim comando As New SqlCommand(consulta, conexion)
+        comando.CommandType = CommandType.StoredProcedure
 
         comando.Parameters.AddWithValue("@IdCliente", reserva.IdCliente)
         comando.Parameters.AddWithValue("@FIngreso", reserva.FIngreso)
@@ -175,6 +181,7 @@ Public Class ReservaClass
         comando.Parameters.AddWithValue("@cantPersonas", reserva.CantPersonas)
         comando.Parameters.AddWithValue("@impDia", reserva.ImpDia)
         comando.Parameters.AddWithValue("@ImpTotal", reserva.ImpTotal)
+        comando.Parameters.AddWithValue("@Descripcion", reserva.Descripcion)
 
         comando.ExecuteNonQuery()
 
@@ -187,11 +194,9 @@ Public Class ReservaClass
 
         Conectar()
 
-        Dim consulta As String = "UPDATE Reservas SET IdCliente=@IdCliente, FIngreso=@FIngreso, " _
-        & " FEgreso=@FEgreso,FReserva=@FReserva, CantDias = @CantDias,CantPersonas=@CantPersonas, " _
-        & "impDia=@impDia, ImpTotal=@ImpTotal WHERE id=@id"
-
-        Dim comando As New SqlCommand(consulta, conexion)
+      
+        Dim comando As New SqlCommand("ReservaModificar", conexion)
+        comando.CommandType = CommandType.StoredProcedure
 
         comando.Parameters.AddWithValue("@IdCliente", reserva.IdCliente)
         comando.Parameters.AddWithValue("@FIngreso", reserva.FIngreso)
@@ -213,9 +218,8 @@ Public Class ReservaClass
 
         Conectar()
 
-        Dim consulta As String = "DELETE FROM reservas WHERE id=@id"
-
-        Dim comando As New SqlCommand(consulta, conexion)
+        Dim comando As New SqlCommand("ReservaEliminar", conexion)
+        comando.CommandType = CommandType.StoredProcedure
 
         comando.Parameters.AddWithValue("@id", Id)
 
@@ -229,9 +233,10 @@ Public Class ReservaClass
 
         Conectar()
 
-        Dim consultas As String = "SELECT TOP(1)Id FROM Reservas ORDER BY Id DESC"
 
-        Dim comando As New SqlCommand(consultas, conexion)
+        Dim comando As New SqlCommand("ReservaUltimoId", conexion)
+        comando.CommandType = CommandType.StoredProcedure
+
 
         txt.Text = comando.ExecuteScalar
 
