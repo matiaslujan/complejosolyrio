@@ -70,8 +70,8 @@
             txtId.Text = Reserva.Id
             txtCantDia.Text = Reserva.CantDias
             txtCantPer.Text = Reserva.CantPersonas
-            txtTotal.Text = Reserva.ImpTotal
-            txtImpDia.Text = Reserva.ImpDia
+            txtTotal.Text = "$" + CStr(Reserva.ImpTotal)
+            txtImpDia.Text = "$" + CStr(Reserva.ImpDia)
             dtpFecha.Text = Reserva.Fecha
             dtpFechaEgreso.Text = Reserva.FEgreso
             dtpFechaIngreso.Text = Reserva.FIngreso
@@ -113,18 +113,19 @@
 
             MsgBox("Cambios guardados")
 
-            Operacion = "M"
-            btnAgregar.Enabled = True
-            btnModificar.Enabled = True
-            btnEliminar.Enabled = True
 
         Else
 
             reserva.Agregar(reserva)
 
             reserva.ultimoid(txtId)
+
             MsgBox("Datos Cargados")
 
+            Operacion = "M"
+            btnAgregar.Enabled = True
+            btnModificar.Enabled = True
+            btnEliminar.Enabled = True
         End If
 
         reserva.Traer(tabla)
