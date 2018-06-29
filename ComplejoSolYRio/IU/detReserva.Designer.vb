@@ -334,7 +334,8 @@ Partial Class detReserva
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "detReserva"
-        Me.Text = "detReserva"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Reserva"
         CType(Me.dgvServiciosReserva, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

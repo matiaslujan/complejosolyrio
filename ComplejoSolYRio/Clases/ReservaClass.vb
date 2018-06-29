@@ -127,7 +127,7 @@ Public Class ReservaClass
         adapter.Fill(table)
 
         dgv.DataSource = table
-
+        dgv.Columns("Id").Visible = False
 
         Desconectar()
 
@@ -206,6 +206,7 @@ Public Class ReservaClass
         comando.Parameters.AddWithValue("@CantPersonas", reserva.CantPersonas)
         comando.Parameters.AddWithValue("@ImpDia", reserva.ImpDia)
         comando.Parameters.AddWithValue("@ImpTotal", reserva.ImpTotal)
+        comando.Parameters.AddWithValue("@Descripcion", reserva.Descripcion)
         comando.Parameters.AddWithValue("@Id", reserva.Id)
 
         comando.ExecuteNonQuery()

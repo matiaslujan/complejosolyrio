@@ -160,7 +160,9 @@ Partial Class detServicio
         Me.Controls.Add(Me.dtpFecha)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
+        Me.MaximizeBox = False
         Me.Name = "detServicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Servicio"
         Me.ResumeLayout(False)
         Me.PerformLayout()

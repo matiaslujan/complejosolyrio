@@ -100,7 +100,7 @@ Partial Class listReservas
         Me.MaximizeBox = False
         Me.Name = "listReservas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "listReservas"
+        Me.Text = "Reservas"
         CType(Me.dgvReservas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

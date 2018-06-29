@@ -78,12 +78,9 @@ Public Class ServicioClass
         adaptador.Fill(tabla)
 
         dgv.DataSource = tabla
+        dgv.Columns("Id").Visible = False
+        dgv.Columns("IdReserva").Visible = False
 
-        If dgv.RowCount > 0 Then
-
-            dgv.Rows(0).Selected = False
-
-        End If
         Desconectar()
 
     End Sub

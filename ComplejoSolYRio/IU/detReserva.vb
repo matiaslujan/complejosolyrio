@@ -151,6 +151,7 @@
     End Sub
 
     Private Sub modificar()
+
         Dim servres As New ServicioClass
 
         servres.Id = dgvServiciosReserva.CurrentRow.Cells("Id").Value
@@ -199,6 +200,11 @@
     End Sub
 
     Private Sub dtpFechaEgreso_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpFechaEgreso.ValueChanged
+
+        txtCantDia.Text = DateDiff(DateInterval.Day, CDate(dtpFechaIngreso.Text), CDate(dtpFechaEgreso.Text))
+
+    End Sub
+    Private Sub dtpFechaIngreso_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpFechaIngreso.ValueChanged
 
         txtCantDia.Text = DateDiff(DateInterval.Day, CDate(dtpFechaIngreso.Text), CDate(dtpFechaEgreso.Text))
 
