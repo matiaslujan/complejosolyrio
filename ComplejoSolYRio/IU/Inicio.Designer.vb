@@ -27,7 +27,6 @@ Partial Class Inicio
         Me.MatiasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ClientesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.AdministracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,7 +52,7 @@ Partial Class Inicio
         'MatiasToolStripMenuItem
         '
         Me.MatiasToolStripMenuItem.Name = "MatiasToolStripMenuItem"
-        Me.MatiasToolStripMenuItem.Size = New System.Drawing.Size(126, 26)
+        Me.MatiasToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
         Me.MatiasToolStripMenuItem.Text = "Matias"
         '
         'ClientesToolStripMenuItem1
@@ -65,17 +64,10 @@ Partial Class Inicio
         '
         'AdministracionToolStripMenuItem
         '
-        Me.AdministracionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ServiciosToolStripMenuItem})
         Me.AdministracionToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AdministracionToolStripMenuItem.Name = "AdministracionToolStripMenuItem"
         Me.AdministracionToolStripMenuItem.Size = New System.Drawing.Size(127, 25)
         Me.AdministracionToolStripMenuItem.Text = "Administracion"
-        '
-        'ServiciosToolStripMenuItem
-        '
-        Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
-        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
-        Me.ServiciosToolStripMenuItem.Text = "Servicios"
         '
         'Inicio
         '
@@ -99,6 +91,5 @@ Partial Class Inicio
     Friend WithEvents ClientesToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AdministracionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MatiasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ServiciosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
