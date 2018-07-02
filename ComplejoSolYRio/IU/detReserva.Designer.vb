@@ -49,7 +49,7 @@ Partial Class detReserva
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
-        Me.txtDescripcion = New System.Windows.Forms.TextBox
+        Me.txtDescripcion = New System.Windows.Forms.RichTextBox
         CType(Me.dgvServiciosReserva, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -175,7 +175,7 @@ Partial Class detReserva
         'btnSalir
         '
         Me.btnSalir.BackColor = System.Drawing.SystemColors.Control
-        Me.btnSalir.Location = New System.Drawing.Point(454, 214)
+        Me.btnSalir.Location = New System.Drawing.Point(466, 256)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(100, 34)
         Me.btnSalir.TabIndex = 80
@@ -185,7 +185,7 @@ Partial Class detReserva
         'btnGuardar
         '
         Me.btnGuardar.BackColor = System.Drawing.SystemColors.Control
-        Me.btnGuardar.Location = New System.Drawing.Point(276, 214)
+        Me.btnGuardar.Location = New System.Drawing.Point(290, 256)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(100, 34)
         Me.btnGuardar.TabIndex = 79
@@ -296,15 +296,16 @@ Partial Class detReserva
         '
         Me.txtDescripcion.Location = New System.Drawing.Point(137, 168)
         Me.txtDescripcion.Name = "txtDescripcion"
-        Me.txtDescripcion.Size = New System.Drawing.Size(266, 20)
+        Me.txtDescripcion.Size = New System.Drawing.Size(308, 57)
         Me.txtDescripcion.TabIndex = 94
+        Me.txtDescripcion.Text = ""
         '
         'detReserva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Wheat
-        Me.ClientSize = New System.Drawing.Size(857, 259)
+        Me.ClientSize = New System.Drawing.Size(857, 302)
         Me.Controls.Add(Me.txtDescripcion)
         Me.Controls.Add(Me.cbClientes)
         Me.Controls.Add(Me.Descripcion)
@@ -368,5 +369,5 @@ Partial Class detReserva
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txtDescripcion As System.Windows.Forms.TextBox
+    Friend WithEvents txtDescripcion As System.Windows.Forms.RichTextBox
 End Class
