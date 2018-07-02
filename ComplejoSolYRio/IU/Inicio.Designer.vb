@@ -52,7 +52,7 @@ Partial Class Inicio
         'MatiasToolStripMenuItem
         '
         Me.MatiasToolStripMenuItem.Name = "MatiasToolStripMenuItem"
-        Me.MatiasToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
+        Me.MatiasToolStripMenuItem.Size = New System.Drawing.Size(126, 26)
         Me.MatiasToolStripMenuItem.Text = "Matias"
         '
         'ClientesToolStripMenuItem1

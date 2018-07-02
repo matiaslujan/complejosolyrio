@@ -23,7 +23,6 @@ Partial Class detReserva
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.cbClientes = New System.Windows.Forms.ComboBox
-        Me.txtDescripcion = New System.Windows.Forms.TextBox
         Me.Descripcion = New System.Windows.Forms.Label
         Me.btnCalcular = New System.Windows.Forms.Button
         Me.Label12 = New System.Windows.Forms.Label
@@ -50,6 +49,7 @@ Partial Class detReserva
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
+        Me.txtDescripcion = New System.Windows.Forms.TextBox
         CType(Me.dgvServiciosReserva, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,17 +61,10 @@ Partial Class detReserva
         Me.cbClientes.Size = New System.Drawing.Size(125, 21)
         Me.cbClientes.TabIndex = 93
         '
-        'txtDescripcion
-        '
-        Me.txtDescripcion.Location = New System.Drawing.Point(134, 182)
-        Me.txtDescripcion.Name = "txtDescripcion"
-        Me.txtDescripcion.Size = New System.Drawing.Size(100, 20)
-        Me.txtDescripcion.TabIndex = 92
-        '
         'Descripcion
         '
         Me.Descripcion.AutoSize = True
-        Me.Descripcion.Location = New System.Drawing.Point(58, 182)
+        Me.Descripcion.Location = New System.Drawing.Point(60, 168)
         Me.Descripcion.Name = "Descripcion"
         Me.Descripcion.Size = New System.Drawing.Size(63, 13)
         Me.Descripcion.TabIndex = 91
@@ -182,9 +175,9 @@ Partial Class detReserva
         'btnSalir
         '
         Me.btnSalir.BackColor = System.Drawing.SystemColors.Control
-        Me.btnSalir.Location = New System.Drawing.Point(278, 223)
+        Me.btnSalir.Location = New System.Drawing.Point(454, 214)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(75, 23)
+        Me.btnSalir.Size = New System.Drawing.Size(100, 34)
         Me.btnSalir.TabIndex = 80
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = False
@@ -192,9 +185,9 @@ Partial Class detReserva
         'btnGuardar
         '
         Me.btnGuardar.BackColor = System.Drawing.SystemColors.Control
-        Me.btnGuardar.Location = New System.Drawing.Point(100, 223)
+        Me.btnGuardar.Location = New System.Drawing.Point(276, 214)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.btnGuardar.Size = New System.Drawing.Size(100, 34)
         Me.btnGuardar.TabIndex = 79
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = False
@@ -299,14 +292,21 @@ Partial Class detReserva
         Me.Label1.TabIndex = 67
         Me.Label1.Text = "Fecha"
         '
+        'txtDescripcion
+        '
+        Me.txtDescripcion.Location = New System.Drawing.Point(137, 168)
+        Me.txtDescripcion.Name = "txtDescripcion"
+        Me.txtDescripcion.Size = New System.Drawing.Size(266, 20)
+        Me.txtDescripcion.TabIndex = 94
+        '
         'detReserva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Wheat
-        Me.ClientSize = New System.Drawing.Size(857, 265)
-        Me.Controls.Add(Me.cbClientes)
+        Me.ClientSize = New System.Drawing.Size(857, 259)
         Me.Controls.Add(Me.txtDescripcion)
+        Me.Controls.Add(Me.cbClientes)
         Me.Controls.Add(Me.Descripcion)
         Me.Controls.Add(Me.btnCalcular)
         Me.Controls.Add(Me.Label12)
@@ -342,7 +342,6 @@ Partial Class detReserva
 
     End Sub
     Friend WithEvents cbClientes As System.Windows.Forms.ComboBox
-    Friend WithEvents txtDescripcion As System.Windows.Forms.TextBox
     Friend WithEvents Descripcion As System.Windows.Forms.Label
     Friend WithEvents btnCalcular As System.Windows.Forms.Button
     Friend WithEvents Label12 As System.Windows.Forms.Label
@@ -369,4 +368,5 @@ Partial Class detReserva
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtDescripcion As System.Windows.Forms.TextBox
 End Class

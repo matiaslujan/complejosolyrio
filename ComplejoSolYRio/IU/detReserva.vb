@@ -76,6 +76,7 @@
             dtpFechaEgreso.Text = Reserva.FEgreso
             dtpFechaIngreso.Text = Reserva.FIngreso
             cbClientes.SelectedValue = Reserva.IdCliente
+            txtDescripcion.Text = Reserva.Descripcion
 
             Dim servres As New ServicioClass
 
