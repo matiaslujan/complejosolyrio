@@ -50,6 +50,7 @@ Partial Class detReserva
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
         Me.txtDescripcion = New System.Windows.Forms.RichTextBox
+        Me.CbxCancelada = New System.Windows.Forms.CheckBox
         CType(Me.dgvServiciosReserva, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -300,12 +301,23 @@ Partial Class detReserva
         Me.txtDescripcion.TabIndex = 94
         Me.txtDescripcion.Text = ""
         '
+        'CbxCancelada
+        '
+        Me.CbxCancelada.AutoSize = True
+        Me.CbxCancelada.Location = New System.Drawing.Point(136, 232)
+        Me.CbxCancelada.Name = "CbxCancelada"
+        Me.CbxCancelada.Size = New System.Drawing.Size(77, 17)
+        Me.CbxCancelada.TabIndex = 95
+        Me.CbxCancelada.Text = "Cancelada"
+        Me.CbxCancelada.UseVisualStyleBackColor = True
+        '
         'detReserva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Wheat
         Me.ClientSize = New System.Drawing.Size(857, 302)
+        Me.Controls.Add(Me.CbxCancelada)
         Me.Controls.Add(Me.txtDescripcion)
         Me.Controls.Add(Me.cbClientes)
         Me.Controls.Add(Me.Descripcion)
@@ -370,4 +382,5 @@ Partial Class detReserva
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtDescripcion As System.Windows.Forms.RichTextBox
+    Friend WithEvents CbxCancelada As System.Windows.Forms.CheckBox
 End Class

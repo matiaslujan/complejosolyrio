@@ -77,6 +77,7 @@
             dtpFechaIngreso.Text = Reserva.FIngreso
             cbClientes.SelectedValue = Reserva.IdCliente
             txtDescripcion.Text = Reserva.Descripcion
+            CbxCancelada.Checked = Reserva.Cancelada
 
             Dim servres As New ServicioClass
 
@@ -105,7 +106,7 @@
         reserva.ImpDia = txtImpDia.Text
         reserva.ImpTotal = txtTotal.Text
         reserva.Descripcion = txtDescripcion.Text
-
+        reserva.Cancelada = CbxCancelada.Checked
 
         If Operacion = "M" Then
 

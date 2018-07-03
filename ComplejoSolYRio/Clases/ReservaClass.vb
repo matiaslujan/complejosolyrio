@@ -112,6 +112,15 @@ Public Class ReservaClass
         End Set
     End Property
 
+    Private Cancelada_ As Boolean
+    Public Property Cancelada() As Boolean
+        Get
+            Return Cancelada_
+        End Get
+        Set(ByVal value As Boolean)
+            Cancelada_ = value
+        End Set
+    End Property
     Public Sub Traer(ByVal dgv As DataGridView)
 
         Conectar()
@@ -158,6 +167,8 @@ Public Class ReservaClass
                 reserva.ImpDia = (lista("ImpDia"))
                 reserva.ImpTotal = (lista("ImpTotal"))
                 reserva.Descripcion = (lista("Descripcion"))
+                reserva.Cancelada = (lista("Cancelada"))
+
             End While
 
         End If
@@ -182,6 +193,7 @@ Public Class ReservaClass
         comando.Parameters.AddWithValue("@impDia", reserva.ImpDia)
         comando.Parameters.AddWithValue("@ImpTotal", reserva.ImpTotal)
         comando.Parameters.AddWithValue("@Descripcion", reserva.Descripcion)
+        comando.Parameters.AddWithValue("@Cancelada", reserva.Cancelada)
 
         comando.ExecuteNonQuery()
 
@@ -207,6 +219,7 @@ Public Class ReservaClass
         comando.Parameters.AddWithValue("@ImpDia", reserva.ImpDia)
         comando.Parameters.AddWithValue("@ImpTotal", reserva.ImpTotal)
         comando.Parameters.AddWithValue("@Descripcion", reserva.Descripcion)
+        comando.Parameters.AddWithValue("@Cancelada", reserva.Cancelada)
         comando.Parameters.AddWithValue("@Id", reserva.Id)
 
         comando.ExecuteNonQuery()
