@@ -25,15 +25,13 @@ Partial Class Inicio
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
         Me.Reserva = New System.Windows.Forms.ToolStripMenuItem
         Me.MatiasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ClientesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.AdministracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Reserva, Me.ClientesToolStripMenuItem1, Me.AdministracionToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Reserva})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
@@ -52,22 +50,8 @@ Partial Class Inicio
         'MatiasToolStripMenuItem
         '
         Me.MatiasToolStripMenuItem.Name = "MatiasToolStripMenuItem"
-        Me.MatiasToolStripMenuItem.Size = New System.Drawing.Size(126, 26)
+        Me.MatiasToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
         Me.MatiasToolStripMenuItem.Text = "Matias"
-        '
-        'ClientesToolStripMenuItem1
-        '
-        Me.ClientesToolStripMenuItem1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ClientesToolStripMenuItem1.Name = "ClientesToolStripMenuItem1"
-        Me.ClientesToolStripMenuItem1.Size = New System.Drawing.Size(77, 25)
-        Me.ClientesToolStripMenuItem1.Text = "Clientes"
-        '
-        'AdministracionToolStripMenuItem
-        '
-        Me.AdministracionToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AdministracionToolStripMenuItem.Name = "AdministracionToolStripMenuItem"
-        Me.AdministracionToolStripMenuItem.Size = New System.Drawing.Size(127, 25)
-        Me.AdministracionToolStripMenuItem.Text = "Administracion"
         '
         'Inicio
         '
@@ -88,8 +72,6 @@ Partial Class Inicio
     End Sub
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents Reserva As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ClientesToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AdministracionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MatiasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

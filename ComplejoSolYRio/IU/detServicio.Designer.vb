@@ -38,7 +38,7 @@ Partial Class detServicio
         '
         'txtDescripcion
         '
-        Me.txtDescripcion.Location = New System.Drawing.Point(145, 110)
+        Me.txtDescripcion.Location = New System.Drawing.Point(145, 38)
         Me.txtDescripcion.Name = "txtDescripcion"
         Me.txtDescripcion.Size = New System.Drawing.Size(145, 20)
         Me.txtDescripcion.TabIndex = 32
@@ -46,7 +46,7 @@ Partial Class detServicio
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(60, 117)
+        Me.Label5.Location = New System.Drawing.Point(60, 45)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(63, 13)
         Me.Label5.TabIndex = 39
@@ -55,7 +55,7 @@ Partial Class detServicio
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(81, 45)
+        Me.Label4.Location = New System.Drawing.Point(81, 118)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(42, 13)
         Me.Label4.TabIndex = 38
@@ -72,7 +72,7 @@ Partial Class detServicio
         '
         'txtImporte
         '
-        Me.txtImporte.Location = New System.Drawing.Point(145, 42)
+        Me.txtImporte.Location = New System.Drawing.Point(145, 115)
         Me.txtImporte.Name = "txtImporte"
         Me.txtImporte.Size = New System.Drawing.Size(145, 20)
         Me.txtImporte.TabIndex = 30
@@ -126,7 +126,7 @@ Partial Class detServicio
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(195, 157)
+        Me.btnCancelar.Location = New System.Drawing.Point(207, 157)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
         Me.btnCancelar.TabIndex = 36
@@ -135,7 +135,7 @@ Partial Class detServicio
         '
         'btnAceptar
         '
-        Me.btnAceptar.Location = New System.Drawing.Point(58, 157)
+        Me.btnAceptar.Location = New System.Drawing.Point(70, 157)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
         Me.btnAceptar.TabIndex = 33
