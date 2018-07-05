@@ -41,4 +41,14 @@
 
     End Sub
 
+    Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
+
+        Dim res As New ReservaClass
+
+        res.Id = dgvReservas.CurrentRow.Cells("Id").Value
+
+        res.Eliminar(res.Id)
+
+        res.Traer(dgvReservas)
+    End Sub
 End Class
