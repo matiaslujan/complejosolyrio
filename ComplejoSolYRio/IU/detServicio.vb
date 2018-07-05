@@ -31,7 +31,7 @@
             tabla_ = value
         End Set
     End Property
-    'se recibe la tabla de servicios de reserva para luego de agregar un nuevo registro, recargarla
+    'se recibe la tabla de servicios  y el id de la reserva para agregar un nuevo servicio
 
     Public Sub New(ByVal dgv As DataGridView, ByVal id As Integer)
 
@@ -47,7 +47,7 @@
 
     End Sub
 
-    'tabla de servicios de la reserva y el servicioreserva a modificar
+    'tabla de servicios  y el servicio a modificar
 
     Public Sub New(ByVal dgv As DataGridView, ByVal sr As ServicioClass)
         ' This call is required by the Windows Form Designer.
@@ -76,8 +76,6 @@
             txtImporte.Text = servres.Importe
 
             dtpFecha.Text = servres.Fecha
-
-
 
         End If
     End Sub
