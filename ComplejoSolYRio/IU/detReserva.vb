@@ -70,8 +70,8 @@
             txtId.Text = Reserva.Id
             txtCantDia.Text = Reserva.CantDias
             txtCantPer.Text = Reserva.CantPersonas
-            txtTotal.Text = "$" + CStr(Reserva.ImpTotal)
-            txtImpDia.Text = "$" + CStr(Reserva.ImpDia)
+            txtTotal.Text = Reserva.ImpTotal
+            txtImpDia.Text = Reserva.ImpDia
             dtpFecha.Text = Reserva.Fecha
             dtpFechaEgreso.Text = Reserva.FEgreso
             dtpFechaIngreso.Text = Reserva.FIngreso
