@@ -25,13 +25,15 @@ Partial Class Inicio
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
         Me.Reserva = New System.Windows.Forms.ToolStripMenuItem
         Me.MatiasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.btnClientes = New System.Windows.Forms.ToolStripMenuItem
+        Me.btnAdministracion = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Reserva})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Reserva, Me.btnClientes, Me.btnAdministracion})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
@@ -53,6 +55,20 @@ Partial Class Inicio
         Me.MatiasToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
         Me.MatiasToolStripMenuItem.Text = "Matias"
         '
+        'btnClientes
+        '
+        Me.btnClientes.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.btnClientes.Name = "btnClientes"
+        Me.btnClientes.Size = New System.Drawing.Size(77, 25)
+        Me.btnClientes.Text = "Clientes"
+        '
+        'btnAdministracion
+        '
+        Me.btnAdministracion.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.btnAdministracion.Name = "btnAdministracion"
+        Me.btnAdministracion.Size = New System.Drawing.Size(127, 25)
+        Me.btnAdministracion.Text = "Administracion"
+        '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -73,5 +89,7 @@ Partial Class Inicio
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents Reserva As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MatiasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents btnClientes As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents btnAdministracion As System.Windows.Forms.ToolStripMenuItem
 
 End Class
