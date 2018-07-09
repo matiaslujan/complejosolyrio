@@ -70,6 +70,12 @@
     <Compile Include="Clases\ReservaClass.vb" />
     <Compile Include="Clases\ServicioClass.vb" />
     <Compile Include="ConexionClass.vb" />
+    <Compile Include="IU\detCliente.Designer.vb">
+      <DependentUpon>detCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\detCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="IU\detReserva.Designer.vb">
       <DependentUpon>detReserva.vb</DependentUpon>
     </Compile>
@@ -118,6 +124,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="IU\detCliente.resx">
+      <DependentUpon>detCliente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IU\detReserva.resx">
       <DependentUpon>detReserva.vb</DependentUpon>
     </EmbeddedResource>

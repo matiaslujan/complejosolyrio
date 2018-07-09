@@ -62,6 +62,26 @@ Public Class ClienteClass
 
         End Set
     End Property
+    Public Sub Traer(ByVal dgv As DataGridView)
+        Conectar()
+
+        Dim comando As New SqlCommand("ClienteTraer", conexion)
+
+        comando.CommandType = CommandType.StoredProcedure
+
+        Dim lista As New SqlDataAdapter(comando)
+
+        Dim tabla As New Data.DataTable
+
+        lista.Fill(tabla)
+
+        dgv.DataSource = tabla
+
+        dgv.Rows("Id").Visible = False
+
+        Desconectar()
+
+    End Sub
     Public Sub cargarCombo(ByVal combo As ComboBox)
 
         Conectar()
