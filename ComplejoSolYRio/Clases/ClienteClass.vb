@@ -5,7 +5,7 @@ Public Class ClienteClass
 
     Private Id_ As Integer
 
-    Public Property id() As Integer
+    Public Property Id() As Integer
         Get
             Return Id_
         End Get
@@ -13,56 +13,58 @@ Public Class ClienteClass
             Id_ = value
         End Set
     End Property
-    Private nombre_ As String
+    Private Nombre_ As String
 
 
-    Public Property nombre() As String
+    Public Property Nombre() As String
         Get
-            Return nombre_
+            Return Nombre_
 
         End Get
         Set(ByVal value As String)
-            nombre_ = value
+            Nombre_ = value
 
         End Set
     End Property
-    Private domicilio_ As String
+    Private Domicilio_ As String
 
-    Public Property domicilio() As String
+    Public Property Domicilio() As String
         Get
-            Return domicilio_
+            Return Domicilio_
 
         End Get
         Set(ByVal value As String)
-            domicilio_ = value
+            Domicilio_ = value
 
         End Set
     End Property
-    Private telefono_ As String
-    Public Property telefono() As String
+    Private Telefono_ As String
+    Public Property Telefono() As String
         Get
-            Return telefono_
+            Return Telefono_
 
         End Get
         Set(ByVal value As String)
-            telefono_ = value
+            Telefono_ = value
 
         End Set
     End Property
-    Private correo_ As String
+    Private Correo_ As String
 
-    Public Property correo() As String
+    Public Property Correo() As String
         Get
-            Return correo_
+            Return Correo_
 
         End Get
         Set(ByVal value As String)
 
-            correo_ = value
+            Correo_ = value
 
         End Set
     End Property
+
     Public Sub Traer(ByVal dgv As DataGridView)
+
         Conectar()
 
         Dim comando As New SqlCommand("ClienteTraer", conexion)
@@ -77,7 +79,61 @@ Public Class ClienteClass
 
         dgv.DataSource = tabla
 
-        dgv.Rows("Id").Visible = False
+        dgv.Columns("Id").Visible = False
+
+        Desconectar()
+
+    End Sub
+    Public Sub Agregar(ByVal Cliente As ClienteClass)
+        Conectar()
+
+        Dim comando As New SqlCommand("ClienteAgregar", conexion)
+
+        comando.CommandType = CommandType.StoredProcedure
+
+        comando.Parameters.AddWithValue("@Nombre", Cliente.Nombre)
+        comando.Parameters.AddWithValue("@Domicilio", Cliente.Domicilio)
+        comando.Parameters.AddWithValue("@Telefono", Cliente.Telefono)
+        comando.Parameters.AddWithValue("@Correo", Cliente.Correo)
+
+        comando.ExecuteNonQuery()
+
+
+        Desconectar()
+
+
+    End Sub
+    Public Sub Modificar(ByVal Cliente As ClienteClass)
+
+        Conectar()
+
+        Dim comando As New SqlCommand("ClienteModificar", conexion)
+
+        comando.CommandType = CommandType.StoredProcedure
+
+        comando.Parameters.AddWithValue("@Nombre", Cliente.Nombre)
+        comando.Parameters.AddWithValue("@Domicilio", Cliente.Domicilio)
+        comando.Parameters.AddWithValue("@Telefono", Cliente.Telefono)
+        comando.Parameters.AddWithValue("@Correo", Cliente.Correo)
+        comando.Parameters.AddWithValue("@Id", Cliente.Id)
+
+        comando.ExecuteNonQuery()
+
+
+        Desconectar()
+
+    End Sub
+    Public Sub Eliminar(ByVal Id As Integer)
+
+        Conectar()
+
+        Dim comando As New SqlCommand("ClienteEliminar", conexion)
+
+        comando.CommandType = CommandType.StoredProcedure
+
+        comando.Parameters.AddWithValue("@Id", Id)
+
+        comando.ExecuteNonQuery()
 
         Desconectar()
 
@@ -101,9 +157,9 @@ Public Class ClienteClass
 
                 Dim cliente As New ClienteClass
 
-                cliente.id = (lista("id"))
+                cliente.Id = (lista("id"))
 
-                cliente.nombre = (lista("nombre"))
+                cliente.Nombre = (lista("nombre"))
 
                 lista2.Add(cliente)
 
@@ -117,7 +173,28 @@ Public Class ClienteClass
 
         End If
 
+        Desconectar()
+    End Sub
+
+    Public Sub Buscar(ByVal Nombre As String, ByVal dgv As DataGridView)
+
+        Conectar()
+
+        Dim comando As New SqlCommand("ClienteBuscar", conexion)
+
+        comando.CommandType = CommandType.StoredProcedure
+
+        comando.Parameters.AddWithValue("@Nombre", Nombre)
+
+        Dim tabla As New Data.DataTable
+
+        Dim lista As New SqlDataAdapter(comando)
+
+        lista.Fill(tabla)
+
+        dgv.DataSource = tabla
 
         Desconectar()
+
     End Sub
 End Class
