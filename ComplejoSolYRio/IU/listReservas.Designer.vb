@@ -26,6 +26,8 @@ Partial Class listReservas
         Me.btnAgregar = New System.Windows.Forms.Button
         Me.btnEliminar = New System.Windows.Forms.Button
         Me.btnModificar = New System.Windows.Forms.Button
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.txtBuscar = New System.Windows.Forms.TextBox
         CType(Me.dgvReservas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,12 +89,33 @@ Partial Class listReservas
         Me.btnModificar.Text = "Modificar"
         Me.btnModificar.UseVisualStyleBackColor = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(528, 282)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(65, 20)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Buscar"
+        '
+        'txtBuscar
+        '
+        Me.txtBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBuscar.Location = New System.Drawing.Point(599, 279)
+        Me.txtBuscar.Multiline = True
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(158, 29)
+        Me.txtBuscar.TabIndex = 14
+        '
         'listReservas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkOrange
         Me.ClientSize = New System.Drawing.Size(769, 316)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.dgvReservas)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.btnEliminar)
@@ -103,10 +126,13 @@ Partial Class listReservas
         Me.Text = "Reservas"
         CType(Me.dgvReservas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents dgvReservas As System.Windows.Forms.DataGridView
     Friend WithEvents btnAgregar As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents btnModificar As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
 End Class

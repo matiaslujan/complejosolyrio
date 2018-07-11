@@ -212,4 +212,11 @@
 
     End Sub
 
+    Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
+
+        Dim det As New detCliente(cbClientes)
+        det.ShowDialog()
+
+
+    End Sub
 End Class

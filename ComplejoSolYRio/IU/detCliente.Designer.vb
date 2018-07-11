@@ -165,7 +165,9 @@ Partial Class detCliente
         Me.Controls.Add(Me.txtTelefono)
         Me.Controls.Add(Me.txtDomicilio)
         Me.Controls.Add(Me.txtNombre)
+        Me.MaximizeBox = False
         Me.Name = "detCliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "detCliente"
         Me.ResumeLayout(False)
         Me.PerformLayout()

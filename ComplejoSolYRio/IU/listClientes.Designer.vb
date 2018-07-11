@@ -91,6 +91,7 @@ Partial Class listClientes
         '
         'txtBuscar
         '
+        Me.txtBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBuscar.Location = New System.Drawing.Point(609, 277)
         Me.txtBuscar.Multiline = True
         Me.txtBuscar.Name = "txtBuscar"

@@ -51,4 +51,12 @@
 
         res.Traer(dgvReservas)
     End Sub
+
+    Private Sub txtBuscar_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscar.TextChanged
+        Dim r As New ReservaClass
+
+        r.Buscar(txtBuscar.Text, dgvReservas)
+
+
+    End Sub
 End Class

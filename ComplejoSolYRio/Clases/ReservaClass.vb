@@ -258,4 +258,25 @@ Public Class ReservaClass
 
 
     End Sub
+    Public Sub Buscar(ByVal Nombre As String, ByVal dgv As DataGridView)
+
+
+        Conectar()
+
+        Dim comando As New SqlCommand("ReservaBuscar", conexion)
+
+        comando.CommandType = CommandType.StoredProcedure
+
+        comando.Parameters.AddWithValue("@Nombre", Nombre)
+        Dim tabla As New Data.DataTable
+
+        Dim lista As New SqlDataAdapter(comando)
+
+        lista.Fill(tabla)
+
+        dgv.DataSource = tabla
+
+        Desconectar()
+
+    End Sub
 End Class

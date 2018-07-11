@@ -51,13 +51,14 @@ Partial Class detReserva
         Me.Label1 = New System.Windows.Forms.Label
         Me.txtDescripcion = New System.Windows.Forms.RichTextBox
         Me.CbxCancelada = New System.Windows.Forms.CheckBox
+        Me.btnNuevo = New System.Windows.Forms.Button
         CType(Me.dgvServiciosReserva, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cbClientes
         '
         Me.cbClientes.FormattingEnabled = True
-        Me.cbClientes.Location = New System.Drawing.Point(137, 21)
+        Me.cbClientes.Location = New System.Drawing.Point(120, 21)
         Me.cbClientes.Name = "cbClientes"
         Me.cbClientes.Size = New System.Drawing.Size(125, 21)
         Me.cbClientes.TabIndex = 93
@@ -65,7 +66,7 @@ Partial Class detReserva
         'Descripcion
         '
         Me.Descripcion.AutoSize = True
-        Me.Descripcion.Location = New System.Drawing.Point(60, 168)
+        Me.Descripcion.Location = New System.Drawing.Point(43, 168)
         Me.Descripcion.Name = "Descripcion"
         Me.Descripcion.Size = New System.Drawing.Size(63, 13)
         Me.Descripcion.TabIndex = 91
@@ -148,7 +149,7 @@ Partial Class detReserva
         '
         'dtpFechaIngreso
         '
-        Me.dtpFechaIngreso.Location = New System.Drawing.Point(137, 59)
+        Me.dtpFechaIngreso.Location = New System.Drawing.Point(120, 59)
         Me.dtpFechaIngreso.Name = "dtpFechaIngreso"
         Me.dtpFechaIngreso.Size = New System.Drawing.Size(125, 20)
         Me.dtpFechaIngreso.TabIndex = 82
@@ -202,7 +203,7 @@ Partial Class detReserva
         '
         'txtImpDia
         '
-        Me.txtImpDia.Location = New System.Drawing.Point(136, 136)
+        Me.txtImpDia.Location = New System.Drawing.Point(119, 136)
         Me.txtImpDia.Name = "txtImpDia"
         Me.txtImpDia.Size = New System.Drawing.Size(84, 20)
         Me.txtImpDia.TabIndex = 77
@@ -216,7 +217,7 @@ Partial Class detReserva
         '
         'txtCantPer
         '
-        Me.txtCantPer.Location = New System.Drawing.Point(137, 97)
+        Me.txtCantPer.Location = New System.Drawing.Point(120, 97)
         Me.txtCantPer.Name = "txtCantPer"
         Me.txtCantPer.Size = New System.Drawing.Size(84, 20)
         Me.txtCantPer.TabIndex = 75
@@ -251,7 +252,7 @@ Partial Class detReserva
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(44, 143)
+        Me.Label6.Location = New System.Drawing.Point(27, 143)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(79, 13)
         Me.Label6.TabIndex = 71
@@ -260,7 +261,7 @@ Partial Class detReserva
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(82, 21)
+        Me.Label5.Location = New System.Drawing.Point(65, 21)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(39, 13)
         Me.Label5.TabIndex = 70
@@ -269,7 +270,7 @@ Partial Class detReserva
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(45, 100)
+        Me.Label3.Location = New System.Drawing.Point(28, 100)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(79, 13)
         Me.Label3.TabIndex = 69
@@ -278,7 +279,7 @@ Partial Class detReserva
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(82, 59)
+        Me.Label2.Location = New System.Drawing.Point(65, 59)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(42, 13)
         Me.Label2.TabIndex = 68
@@ -295,7 +296,7 @@ Partial Class detReserva
         '
         'txtDescripcion
         '
-        Me.txtDescripcion.Location = New System.Drawing.Point(137, 168)
+        Me.txtDescripcion.Location = New System.Drawing.Point(120, 168)
         Me.txtDescripcion.Name = "txtDescripcion"
         Me.txtDescripcion.Size = New System.Drawing.Size(308, 57)
         Me.txtDescripcion.TabIndex = 94
@@ -304,12 +305,21 @@ Partial Class detReserva
         'CbxCancelada
         '
         Me.CbxCancelada.AutoSize = True
-        Me.CbxCancelada.Location = New System.Drawing.Point(136, 232)
+        Me.CbxCancelada.Location = New System.Drawing.Point(119, 232)
         Me.CbxCancelada.Name = "CbxCancelada"
         Me.CbxCancelada.Size = New System.Drawing.Size(77, 17)
         Me.CbxCancelada.TabIndex = 95
         Me.CbxCancelada.Text = "Cancelada"
         Me.CbxCancelada.UseVisualStyleBackColor = True
+        '
+        'btnNuevo
+        '
+        Me.btnNuevo.Location = New System.Drawing.Point(244, 21)
+        Me.btnNuevo.Name = "btnNuevo"
+        Me.btnNuevo.Size = New System.Drawing.Size(25, 21)
+        Me.btnNuevo.TabIndex = 96
+        Me.btnNuevo.Text = "+"
+        Me.btnNuevo.UseVisualStyleBackColor = True
         '
         'detReserva
         '
@@ -317,6 +327,7 @@ Partial Class detReserva
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Wheat
         Me.ClientSize = New System.Drawing.Size(857, 302)
+        Me.Controls.Add(Me.btnNuevo)
         Me.Controls.Add(Me.CbxCancelada)
         Me.Controls.Add(Me.txtDescripcion)
         Me.Controls.Add(Me.cbClientes)
@@ -383,4 +394,5 @@ Partial Class detReserva
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtDescripcion As System.Windows.Forms.RichTextBox
     Friend WithEvents CbxCancelada As System.Windows.Forms.CheckBox
+    Friend WithEvents btnNuevo As System.Windows.Forms.Button
 End Class

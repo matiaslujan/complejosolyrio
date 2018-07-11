@@ -30,7 +30,26 @@
             lista_ = value
         End Set
     End Property
+    Private Combo_ As ComboBox
 
+    Public Property Combo() As ComboBox
+        Get
+            Return Combo_
+        End Get
+        Set(ByVal value As ComboBox)
+            Combo_ = value
+        End Set
+    End Property
+    'agregar cliente desd rsrva y cargar combo
+    Public Sub New(ByVal com As ComboBox)
+
+        ' Llamada necesaria para el Diseñador de Windows Forms.
+        InitializeComponent()
+        Operacion = "AC"
+        Combo = com
+        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
+
+    End Sub
     Public Sub New(ByVal dgv As DataGridView)
 
         ' Llamada necesaria para el Diseñador de Windows Forms.
@@ -83,10 +102,16 @@
             Cliente.Id = txtId.Text
 
             Cliente.Modificar(Cliente)
-        Else
+        ElseIf Operacion = "A" Then
 
             Cliente.Agregar(Cliente)
+        Else
+            Cliente.Agregar(Cliente)
+            Cliente.cargarCombo(Combo)
 
+            Close()
+
+            Exit Sub
         End If
 
         Cliente.Traer(lista)
