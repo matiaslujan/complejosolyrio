@@ -8,4 +8,12 @@
         listClientes.ShowDialog()
 
     End Sub
+
+    Private Sub btnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscar.Click
+        Dim b As New listReservas
+
+        b.ShowDialog()
+
+
+    End Sub
 End Class

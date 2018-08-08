@@ -30,6 +30,8 @@ Partial Class Inicio
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
+        Me.btnBuscar = New System.Windows.Forms.Button
+        Me.btnNueva = New System.Windows.Forms.Button
         Me.MenuStrip1.SuspendLayout()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -46,7 +48,7 @@ Partial Class Inicio
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.MenuStrip1.Size = New System.Drawing.Size(608, 40)
+        Me.MenuStrip1.Size = New System.Drawing.Size(912, 40)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -97,19 +99,23 @@ Partial Class Inicio
         '
         'SplitContainer1.Panel1
         '
+        Me.SplitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.SplitContainer1.Panel1.Controls.Add(Me.MonthCalendar1)
         '
         'SplitContainer1.Panel2
         '
+        Me.SplitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.SplitContainer1.Panel2.Controls.Add(Me.btnNueva)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.btnBuscar)
         Me.SplitContainer1.Panel2.Controls.Add(Me.DataGridView1)
         Me.SplitContainer1.Panel2.Padding = New System.Windows.Forms.Padding(20)
-        Me.SplitContainer1.Size = New System.Drawing.Size(608, 385)
-        Me.SplitContainer1.SplitterDistance = 153
+        Me.SplitContainer1.Size = New System.Drawing.Size(912, 600)
+        Me.SplitContainer1.SplitterDistance = 229
         Me.SplitContainer1.TabIndex = 3
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.CalendarDimensions = New System.Drawing.Size(1, 2)
+        Me.MonthCalendar1.CalendarDimensions = New System.Drawing.Size(1, 3)
         Me.MonthCalendar1.Dock = System.Windows.Forms.DockStyle.Left
         Me.MonthCalendar1.Location = New System.Drawing.Point(0, 0)
         Me.MonthCalendar1.Name = "MonthCalendar1"
@@ -122,14 +128,32 @@ Partial Class Inicio
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Top
         Me.DataGridView1.Location = New System.Drawing.Point(20, 20)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(411, 192)
+        Me.DataGridView1.Size = New System.Drawing.Size(639, 277)
         Me.DataGridView1.TabIndex = 0
+        '
+        'btnBuscar
+        '
+        Me.btnBuscar.Location = New System.Drawing.Point(36, 382)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(114, 37)
+        Me.btnBuscar.TabIndex = 1
+        Me.btnBuscar.Text = "Buscar"
+        Me.btnBuscar.UseVisualStyleBackColor = True
+        '
+        'btnNueva
+        '
+        Me.btnNueva.Location = New System.Drawing.Point(212, 382)
+        Me.btnNueva.Name = "btnNueva"
+        Me.btnNueva.Size = New System.Drawing.Size(114, 37)
+        Me.btnNueva.TabIndex = 2
+        Me.btnNueva.Text = "Nueva Reserva"
+        Me.btnNueva.UseVisualStyleBackColor = True
         '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(608, 425)
+        Me.ClientSize = New System.Drawing.Size(912, 640)
         Me.Controls.Add(Me.SplitContainer1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
@@ -155,5 +179,7 @@ Partial Class Inicio
     Friend WithEvents SplitContainer1 As System.Windows.Forms.SplitContainer
     Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents btnBuscar As System.Windows.Forms.Button
+    Friend WithEvents btnNueva As System.Windows.Forms.Button
 
 End Class
