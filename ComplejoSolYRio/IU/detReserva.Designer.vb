@@ -78,25 +78,27 @@ Partial Class detReserva
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(973, 165)
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(93, 119)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(31, 13)
+        Me.Label15.Size = New System.Drawing.Size(44, 20)
         Me.Label15.TabIndex = 162
         Me.Label15.Text = "Total"
         '
         'txtTotal
         '
         Me.txtTotal.Enabled = False
-        Me.txtTotal.Location = New System.Drawing.Point(966, 184)
+        Me.txtTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotal.Location = New System.Drawing.Point(143, 119)
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.ReadOnly = True
-        Me.txtTotal.Size = New System.Drawing.Size(50, 20)
+        Me.txtTotal.Size = New System.Drawing.Size(69, 26)
         Me.txtTotal.TabIndex = 161
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(89, 289)
+        Me.Label14.Location = New System.Drawing.Point(89, 296)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(46, 13)
         Me.Label14.TabIndex = 160
@@ -105,7 +107,7 @@ Partial Class detReserva
         'txtServiciosTot
         '
         Me.txtServiciosTot.Enabled = False
-        Me.txtServiciosTot.Location = New System.Drawing.Point(34, 286)
+        Me.txtServiciosTot.Location = New System.Drawing.Point(34, 293)
         Me.txtServiciosTot.Name = "txtServiciosTot"
         Me.txtServiciosTot.ReadOnly = True
         Me.txtServiciosTot.Size = New System.Drawing.Size(50, 20)
@@ -114,25 +116,27 @@ Partial Class detReserva
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(971, 254)
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(235, 119)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(39, 13)
+        Me.Label13.Size = New System.Drawing.Size(57, 20)
         Me.Label13.TabIndex = 158
         Me.Label13.Text = "Deuda"
         '
         'txtDeuda
         '
         Me.txtDeuda.Enabled = False
-        Me.txtDeuda.Location = New System.Drawing.Point(967, 270)
+        Me.txtDeuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDeuda.Location = New System.Drawing.Point(298, 119)
         Me.txtDeuda.Name = "txtDeuda"
         Me.txtDeuda.ReadOnly = True
-        Me.txtDeuda.Size = New System.Drawing.Size(50, 20)
+        Me.txtDeuda.Size = New System.Drawing.Size(65, 26)
         Me.txtDeuda.TabIndex = 157
         '
         'Pagado
         '
         Me.Pagado.AutoSize = True
-        Me.Pagado.Location = New System.Drawing.Point(969, 207)
+        Me.Pagado.Location = New System.Drawing.Point(860, 296)
         Me.Pagado.Name = "Pagado"
         Me.Pagado.Size = New System.Drawing.Size(44, 13)
         Me.Pagado.TabIndex = 156
@@ -141,7 +145,7 @@ Partial Class detReserva
         'txtPagado
         '
         Me.txtPagado.Enabled = False
-        Me.txtPagado.Location = New System.Drawing.Point(967, 226)
+        Me.txtPagado.Location = New System.Drawing.Point(910, 296)
         Me.txtPagado.Name = "txtPagado"
         Me.txtPagado.ReadOnly = True
         Me.txtPagado.Size = New System.Drawing.Size(50, 20)
@@ -150,10 +154,10 @@ Partial Class detReserva
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(784, 155)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(784, 162)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(48, 16)
+        Me.Label9.Size = New System.Drawing.Size(56, 18)
         Me.Label9.TabIndex = 154
         Me.Label9.Text = "Pagos"
         '
@@ -163,7 +167,7 @@ Partial Class detReserva
         Me.dgvPagos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPagos.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvPagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvPagos.Location = New System.Drawing.Point(671, 181)
+        Me.dgvPagos.Location = New System.Drawing.Point(671, 188)
         Me.dgvPagos.MultiSelect = False
         Me.dgvPagos.Name = "dgvPagos"
         Me.dgvPagos.ReadOnly = True
@@ -175,7 +179,7 @@ Partial Class detReserva
         'btnEliminarPago
         '
         Me.btnEliminarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminarPago.Location = New System.Drawing.Point(854, 309)
+        Me.btnEliminarPago.Location = New System.Drawing.Point(854, 334)
         Me.btnEliminarPago.Name = "btnEliminarPago"
         Me.btnEliminarPago.Size = New System.Drawing.Size(72, 28)
         Me.btnEliminarPago.TabIndex = 152
@@ -185,7 +189,7 @@ Partial Class detReserva
         'btnModificarPago
         '
         Me.btnModificarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificarPago.Location = New System.Drawing.Point(776, 309)
+        Me.btnModificarPago.Location = New System.Drawing.Point(776, 334)
         Me.btnModificarPago.Name = "btnModificarPago"
         Me.btnModificarPago.Size = New System.Drawing.Size(72, 28)
         Me.btnModificarPago.TabIndex = 151
@@ -195,7 +199,7 @@ Partial Class detReserva
         'btnAgregarPago
         '
         Me.btnAgregarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarPago.Location = New System.Drawing.Point(698, 309)
+        Me.btnAgregarPago.Location = New System.Drawing.Point(698, 334)
         Me.btnAgregarPago.Name = "btnAgregarPago"
         Me.btnAgregarPago.Size = New System.Drawing.Size(72, 28)
         Me.btnAgregarPago.TabIndex = 150
@@ -205,10 +209,10 @@ Partial Class detReserva
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(455, 155)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(455, 162)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 16)
+        Me.Label4.Size = New System.Drawing.Size(105, 18)
         Me.Label4.TabIndex = 149
         Me.Label4.Text = "Alojamientos"
         '
@@ -218,7 +222,7 @@ Partial Class detReserva
         Me.dgvAlojamientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvAlojamientos.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvAlojamientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvAlojamientos.Location = New System.Drawing.Point(353, 181)
+        Me.dgvAlojamientos.Location = New System.Drawing.Point(353, 188)
         Me.dgvAlojamientos.MultiSelect = False
         Me.dgvAlojamientos.Name = "dgvAlojamientos"
         Me.dgvAlojamientos.ReadOnly = True
@@ -230,7 +234,7 @@ Partial Class detReserva
         'btnEliminarAloj
         '
         Me.btnEliminarAloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminarAloj.Location = New System.Drawing.Point(536, 309)
+        Me.btnEliminarAloj.Location = New System.Drawing.Point(536, 334)
         Me.btnEliminarAloj.Name = "btnEliminarAloj"
         Me.btnEliminarAloj.Size = New System.Drawing.Size(72, 28)
         Me.btnEliminarAloj.TabIndex = 147
@@ -240,7 +244,7 @@ Partial Class detReserva
         'btnModificarAloj
         '
         Me.btnModificarAloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificarAloj.Location = New System.Drawing.Point(458, 309)
+        Me.btnModificarAloj.Location = New System.Drawing.Point(458, 334)
         Me.btnModificarAloj.Name = "btnModificarAloj"
         Me.btnModificarAloj.Size = New System.Drawing.Size(72, 28)
         Me.btnModificarAloj.TabIndex = 146
@@ -250,7 +254,7 @@ Partial Class detReserva
         'btnAgregarAloj
         '
         Me.btnAgregarAloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarAloj.Location = New System.Drawing.Point(380, 309)
+        Me.btnAgregarAloj.Location = New System.Drawing.Point(380, 334)
         Me.btnAgregarAloj.Name = "btnAgregarAloj"
         Me.btnAgregarAloj.Size = New System.Drawing.Size(72, 28)
         Me.btnAgregarAloj.TabIndex = 145
@@ -271,7 +275,7 @@ Partial Class detReserva
         '
         Me.CbxCancelada.AutoSize = True
         Me.CbxCancelada.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CbxCancelada.Location = New System.Drawing.Point(853, 360)
+        Me.CbxCancelada.Location = New System.Drawing.Point(853, 385)
         Me.CbxCancelada.Name = "CbxCancelada"
         Me.CbxCancelada.Size = New System.Drawing.Size(104, 24)
         Me.CbxCancelada.TabIndex = 143
@@ -319,10 +323,10 @@ Partial Class detReserva
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(148, 155)
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(148, 162)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(64, 16)
+        Me.Label12.Size = New System.Drawing.Size(78, 18)
         Me.Label12.TabIndex = 138
         Me.Label12.Text = "Servicios"
         '
@@ -332,7 +336,7 @@ Partial Class detReserva
         Me.dgvServiciosReserva.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvServiciosReserva.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvServiciosReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvServiciosReserva.Location = New System.Drawing.Point(35, 181)
+        Me.dgvServiciosReserva.Location = New System.Drawing.Point(35, 188)
         Me.dgvServiciosReserva.MultiSelect = False
         Me.dgvServiciosReserva.Name = "dgvServiciosReserva"
         Me.dgvServiciosReserva.ReadOnly = True
@@ -344,7 +348,7 @@ Partial Class detReserva
         'btnEliminar
         '
         Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(218, 309)
+        Me.btnEliminar.Location = New System.Drawing.Point(218, 334)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(72, 28)
         Me.btnEliminar.TabIndex = 136
@@ -354,7 +358,7 @@ Partial Class detReserva
         'btnModificar
         '
         Me.btnModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificar.Location = New System.Drawing.Point(140, 309)
+        Me.btnModificar.Location = New System.Drawing.Point(140, 334)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(72, 28)
         Me.btnModificar.TabIndex = 135
@@ -364,7 +368,7 @@ Partial Class detReserva
         'btnAgregar
         '
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregar.Location = New System.Drawing.Point(62, 309)
+        Me.btnAgregar.Location = New System.Drawing.Point(62, 334)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(72, 28)
         Me.btnAgregar.TabIndex = 134
@@ -424,7 +428,7 @@ Partial Class detReserva
         'btnSalir
         '
         Me.btnSalir.BackColor = System.Drawing.SystemColors.Control
-        Me.btnSalir.Location = New System.Drawing.Point(517, 350)
+        Me.btnSalir.Location = New System.Drawing.Point(517, 375)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(100, 34)
         Me.btnSalir.TabIndex = 129
@@ -434,7 +438,7 @@ Partial Class detReserva
         'btnGuardar
         '
         Me.btnGuardar.BackColor = System.Drawing.SystemColors.Control
-        Me.btnGuardar.Location = New System.Drawing.Point(326, 350)
+        Me.btnGuardar.Location = New System.Drawing.Point(326, 375)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(100, 34)
         Me.btnGuardar.TabIndex = 128
@@ -557,8 +561,8 @@ Partial Class detReserva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Wheat
-        Me.ClientSize = New System.Drawing.Size(1064, 478)
+        Me.BackColor = System.Drawing.Color.PeachPuff
+        Me.ClientSize = New System.Drawing.Size(990, 444)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.txtTotal)
         Me.Controls.Add(Me.Label14)
