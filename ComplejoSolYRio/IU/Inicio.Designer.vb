@@ -29,9 +29,9 @@ Partial Class Inicio
         Me.btnAdministracion = New System.Windows.Forms.ToolStripMenuItem
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.btnBuscar = New System.Windows.Forms.Button
         Me.btnNueva = New System.Windows.Forms.Button
+        Me.btnBuscar = New System.Windows.Forms.Button
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView
         Me.MenuStrip1.SuspendLayout()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -68,7 +68,7 @@ Partial Class Inicio
         'MatiasToolStripMenuItem
         '
         Me.MatiasToolStripMenuItem.Name = "MatiasToolStripMenuItem"
-        Me.MatiasToolStripMenuItem.Size = New System.Drawing.Size(152, 28)
+        Me.MatiasToolStripMenuItem.Size = New System.Drawing.Size(133, 28)
         Me.MatiasToolStripMenuItem.Text = "Matias"
         '
         'btnClientes
@@ -122,14 +122,14 @@ Partial Class Inicio
         Me.MonthCalendar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.MonthCalendar1.TabIndex = 0
         '
-        'DataGridView1
+        'btnNueva
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DataGridView1.Location = New System.Drawing.Point(20, 20)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(639, 277)
-        Me.DataGridView1.TabIndex = 0
+        Me.btnNueva.Location = New System.Drawing.Point(212, 382)
+        Me.btnNueva.Name = "btnNueva"
+        Me.btnNueva.Size = New System.Drawing.Size(114, 37)
+        Me.btnNueva.TabIndex = 2
+        Me.btnNueva.Text = "Nueva Reserva"
+        Me.btnNueva.UseVisualStyleBackColor = True
         '
         'btnBuscar
         '
@@ -140,14 +140,14 @@ Partial Class Inicio
         Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.UseVisualStyleBackColor = True
         '
-        'btnNueva
+        'DataGridView1
         '
-        Me.btnNueva.Location = New System.Drawing.Point(212, 382)
-        Me.btnNueva.Name = "btnNueva"
-        Me.btnNueva.Size = New System.Drawing.Size(114, 37)
-        Me.btnNueva.TabIndex = 2
-        Me.btnNueva.Text = "Nueva Reserva"
-        Me.btnNueva.UseVisualStyleBackColor = True
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.DataGridView1.Location = New System.Drawing.Point(20, 20)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(639, 277)
+        Me.DataGridView1.TabIndex = 0
         '
         'Inicio
         '
