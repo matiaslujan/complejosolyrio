@@ -22,6 +22,12 @@ Partial Class detReserva
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Me.Label15 = New System.Windows.Forms.Label
         Me.txtTotal = New System.Windows.Forms.TextBox
         Me.Label14 = New System.Windows.Forms.Label
@@ -167,44 +173,79 @@ Partial Class detReserva
         Me.dgvPagos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPagos.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvPagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvPagos.DefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvPagos.GridColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.dgvPagos.Location = New System.Drawing.Point(671, 188)
         Me.dgvPagos.MultiSelect = False
         Me.dgvPagos.Name = "dgvPagos"
         Me.dgvPagos.ReadOnly = True
         Me.dgvPagos.RowHeadersVisible = False
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        Me.dgvPagos.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvPagos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvPagos.Size = New System.Drawing.Size(289, 102)
         Me.dgvPagos.TabIndex = 153
         '
         'btnEliminarPago
         '
+        Me.btnEliminarPago.BackColor = System.Drawing.Color.White
+        Me.btnEliminarPago.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEliminarPago.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminarPago.FlatAppearance.BorderSize = 2
+        Me.btnEliminarPago.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminarPago.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminarPago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminarPago.Location = New System.Drawing.Point(854, 334)
         Me.btnEliminarPago.Name = "btnEliminarPago"
         Me.btnEliminarPago.Size = New System.Drawing.Size(72, 28)
         Me.btnEliminarPago.TabIndex = 152
         Me.btnEliminarPago.Text = "Eliminar"
-        Me.btnEliminarPago.UseVisualStyleBackColor = True
+        Me.btnEliminarPago.UseVisualStyleBackColor = False
         '
         'btnModificarPago
         '
+        Me.btnModificarPago.BackColor = System.Drawing.Color.White
+        Me.btnModificarPago.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModificarPago.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificarPago.FlatAppearance.BorderSize = 2
+        Me.btnModificarPago.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificarPago.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificarPago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarPago.Location = New System.Drawing.Point(776, 334)
         Me.btnModificarPago.Name = "btnModificarPago"
         Me.btnModificarPago.Size = New System.Drawing.Size(72, 28)
         Me.btnModificarPago.TabIndex = 151
         Me.btnModificarPago.Text = "Modificar"
-        Me.btnModificarPago.UseVisualStyleBackColor = True
+        Me.btnModificarPago.UseVisualStyleBackColor = False
         '
         'btnAgregarPago
         '
+        Me.btnAgregarPago.BackColor = System.Drawing.Color.White
+        Me.btnAgregarPago.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAgregarPago.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregarPago.FlatAppearance.BorderSize = 2
+        Me.btnAgregarPago.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregarPago.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregarPago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarPago.Location = New System.Drawing.Point(698, 334)
         Me.btnAgregarPago.Name = "btnAgregarPago"
         Me.btnAgregarPago.Size = New System.Drawing.Size(72, 28)
         Me.btnAgregarPago.TabIndex = 150
         Me.btnAgregarPago.Text = "Agregar"
-        Me.btnAgregarPago.UseVisualStyleBackColor = True
+        Me.btnAgregarPago.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -222,44 +263,79 @@ Partial Class detReserva
         Me.dgvAlojamientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvAlojamientos.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvAlojamientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvAlojamientos.DefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvAlojamientos.GridColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.dgvAlojamientos.Location = New System.Drawing.Point(353, 188)
         Me.dgvAlojamientos.MultiSelect = False
         Me.dgvAlojamientos.Name = "dgvAlojamientos"
         Me.dgvAlojamientos.ReadOnly = True
         Me.dgvAlojamientos.RowHeadersVisible = False
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.dgvAlojamientos.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.dgvAlojamientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvAlojamientos.Size = New System.Drawing.Size(289, 102)
         Me.dgvAlojamientos.TabIndex = 148
         '
         'btnEliminarAloj
         '
+        Me.btnEliminarAloj.BackColor = System.Drawing.Color.White
+        Me.btnEliminarAloj.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEliminarAloj.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminarAloj.FlatAppearance.BorderSize = 2
+        Me.btnEliminarAloj.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminarAloj.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminarAloj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminarAloj.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminarAloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminarAloj.Location = New System.Drawing.Point(536, 334)
         Me.btnEliminarAloj.Name = "btnEliminarAloj"
         Me.btnEliminarAloj.Size = New System.Drawing.Size(72, 28)
         Me.btnEliminarAloj.TabIndex = 147
         Me.btnEliminarAloj.Text = "Eliminar"
-        Me.btnEliminarAloj.UseVisualStyleBackColor = True
+        Me.btnEliminarAloj.UseVisualStyleBackColor = False
         '
         'btnModificarAloj
         '
+        Me.btnModificarAloj.BackColor = System.Drawing.Color.White
+        Me.btnModificarAloj.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModificarAloj.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificarAloj.FlatAppearance.BorderSize = 2
+        Me.btnModificarAloj.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificarAloj.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificarAloj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificarAloj.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificarAloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarAloj.Location = New System.Drawing.Point(458, 334)
         Me.btnModificarAloj.Name = "btnModificarAloj"
         Me.btnModificarAloj.Size = New System.Drawing.Size(72, 28)
         Me.btnModificarAloj.TabIndex = 146
         Me.btnModificarAloj.Text = "Modificar"
-        Me.btnModificarAloj.UseVisualStyleBackColor = True
+        Me.btnModificarAloj.UseVisualStyleBackColor = False
         '
         'btnAgregarAloj
         '
+        Me.btnAgregarAloj.BackColor = System.Drawing.Color.White
+        Me.btnAgregarAloj.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAgregarAloj.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregarAloj.FlatAppearance.BorderSize = 2
+        Me.btnAgregarAloj.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregarAloj.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregarAloj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregarAloj.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregarAloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarAloj.Location = New System.Drawing.Point(380, 334)
         Me.btnAgregarAloj.Name = "btnAgregarAloj"
         Me.btnAgregarAloj.Size = New System.Drawing.Size(72, 28)
         Me.btnAgregarAloj.TabIndex = 145
         Me.btnAgregarAloj.Text = "Agregar"
-        Me.btnAgregarAloj.UseVisualStyleBackColor = True
+        Me.btnAgregarAloj.UseVisualStyleBackColor = False
         '
         'btnNuevo
         '
@@ -336,44 +412,79 @@ Partial Class detReserva
         Me.dgvServiciosReserva.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvServiciosReserva.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvServiciosReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvServiciosReserva.DefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvServiciosReserva.GridColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.dgvServiciosReserva.Location = New System.Drawing.Point(35, 188)
         Me.dgvServiciosReserva.MultiSelect = False
         Me.dgvServiciosReserva.Name = "dgvServiciosReserva"
         Me.dgvServiciosReserva.ReadOnly = True
         Me.dgvServiciosReserva.RowHeadersVisible = False
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        Me.dgvServiciosReserva.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.dgvServiciosReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvServiciosReserva.Size = New System.Drawing.Size(289, 102)
         Me.dgvServiciosReserva.TabIndex = 137
         '
         'btnEliminar
         '
+        Me.btnEliminar.BackColor = System.Drawing.Color.White
+        Me.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminar.FlatAppearance.BorderSize = 2
+        Me.btnEliminar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.Location = New System.Drawing.Point(218, 334)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(72, 28)
         Me.btnEliminar.TabIndex = 136
         Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = True
+        Me.btnEliminar.UseVisualStyleBackColor = False
         '
         'btnModificar
         '
+        Me.btnModificar.BackColor = System.Drawing.Color.White
+        Me.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificar.FlatAppearance.BorderSize = 2
+        Me.btnModificar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificar.Location = New System.Drawing.Point(140, 334)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(72, 28)
         Me.btnModificar.TabIndex = 135
         Me.btnModificar.Text = "Modificar"
-        Me.btnModificar.UseVisualStyleBackColor = True
+        Me.btnModificar.UseVisualStyleBackColor = False
         '
         'btnAgregar
         '
+        Me.btnAgregar.BackColor = System.Drawing.Color.White
+        Me.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregar.FlatAppearance.BorderSize = 2
+        Me.btnAgregar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.Location = New System.Drawing.Point(62, 334)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(72, 28)
         Me.btnAgregar.TabIndex = 134
         Me.btnAgregar.Text = "Agregar"
-        Me.btnAgregar.UseVisualStyleBackColor = True
+        Me.btnAgregar.UseVisualStyleBackColor = False
         '
         'dtpFecha
         '
@@ -427,7 +538,11 @@ Partial Class detReserva
         '
         'btnSalir
         '
-        Me.btnSalir.BackColor = System.Drawing.SystemColors.Control
+        Me.btnSalir.BackColor = System.Drawing.Color.White
+        Me.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnSalir.FlatAppearance.BorderSize = 3
+        Me.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSalir.Location = New System.Drawing.Point(517, 375)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(100, 34)
@@ -437,7 +552,11 @@ Partial Class detReserva
         '
         'btnGuardar
         '
-        Me.btnGuardar.BackColor = System.Drawing.SystemColors.Control
+        Me.btnGuardar.BackColor = System.Drawing.Color.White
+        Me.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnGuardar.FlatAppearance.BorderSize = 3
+        Me.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Location = New System.Drawing.Point(326, 375)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(100, 34)
@@ -561,7 +680,7 @@ Partial Class detReserva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.PeachPuff
+        Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(990, 444)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.txtTotal)
