@@ -203,10 +203,10 @@ Public Class ClienteClass
         Conectar()
 
 
-        Dim consulta As String = "SELECT r.Id, r.FIngreso Ingreso, r.FEgreso Egreso FROM Reservas r  " _
-        & "inner join Clientes c on c.Id = r.IdCliente WHERE c.Id = @Id"
 
-        Dim comando As New SqlCommand(consulta, conexion)
+        Dim comando As New SqlCommand("ClienteHistorial", conexion)
+
+        comando.CommandType = CommandType.StoredProcedure
 
         comando.Parameters.AddWithValue("@Id", id)
 
