@@ -29,9 +29,9 @@ Partial Class Inicio
         Me.btnAdministracion = New System.Windows.Forms.ToolStripMenuItem
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar
-        Me.btnNueva = New System.Windows.Forms.Button
         Me.btnBuscar = New System.Windows.Forms.Button
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
+        Me.btnNueva = New System.Windows.Forms.Button
         Me.MenuStrip1.SuspendLayout()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -41,7 +41,7 @@ Partial Class Inicio
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.SandyBrown
+        Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.MenuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(30, 30)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnReservas, Me.btnClientes, Me.btnAdministracion})
@@ -122,23 +122,18 @@ Partial Class Inicio
         Me.MonthCalendar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.MonthCalendar1.TabIndex = 0
         '
-        'btnNueva
-        '
-        Me.btnNueva.Location = New System.Drawing.Point(212, 382)
-        Me.btnNueva.Name = "btnNueva"
-        Me.btnNueva.Size = New System.Drawing.Size(114, 37)
-        Me.btnNueva.TabIndex = 2
-        Me.btnNueva.Text = "Nueva Reserva"
-        Me.btnNueva.UseVisualStyleBackColor = True
-        '
         'btnBuscar
         '
+        Me.btnBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBuscar.Location = New System.Drawing.Point(36, 382)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(114, 37)
         Me.btnBuscar.TabIndex = 1
         Me.btnBuscar.Text = "Buscar"
-        Me.btnBuscar.UseVisualStyleBackColor = True
+        Me.btnBuscar.UseVisualStyleBackColor = False
         '
         'DataGridView1
         '
@@ -148,6 +143,19 @@ Partial Class Inicio
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(639, 277)
         Me.DataGridView1.TabIndex = 0
+        '
+        'btnNueva
+        '
+        Me.btnNueva.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnNueva.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNueva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btnNueva.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNueva.Location = New System.Drawing.Point(229, 382)
+        Me.btnNueva.Name = "btnNueva"
+        Me.btnNueva.Size = New System.Drawing.Size(114, 37)
+        Me.btnNueva.TabIndex = 3
+        Me.btnNueva.Text = "Nueva Reserva"
+        Me.btnNueva.UseVisualStyleBackColor = False
         '
         'Inicio
         '

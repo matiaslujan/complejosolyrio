@@ -93,7 +93,7 @@
     Private Sub btnAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAceptar.Click
 
         Cliente.Nombre = txtNombre.Text
-        Cliente.Telefono = txtNombre.Text
+        Cliente.Telefono = txtTelefono.Text
         Cliente.Correo = txtCorreo.Text
         Cliente.Domicilio = txtDomicilio.Text
 
@@ -115,6 +115,13 @@
         End If
 
         Cliente.Traer(lista)
+
+        Close()
+
+    End Sub
+
+   
+    Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
 
         Close()
 

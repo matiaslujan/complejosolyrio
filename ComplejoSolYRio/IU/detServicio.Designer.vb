@@ -126,28 +126,38 @@ Partial Class detServicio
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(207, 157)
+        Me.btnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelar.Location = New System.Drawing.Point(204, 166)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 36
+        Me.btnCancelar.Size = New System.Drawing.Size(114, 24)
+        Me.btnCancelar.TabIndex = 86
         Me.btnCancelar.Text = "Cancelar"
-        Me.btnCancelar.UseVisualStyleBackColor = True
+        Me.btnCancelar.UseVisualStyleBackColor = False
         '
         'btnAceptar
         '
-        Me.btnAceptar.Location = New System.Drawing.Point(70, 157)
+        Me.btnAceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAceptar.Location = New System.Drawing.Point(45, 166)
         Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
-        Me.btnAceptar.TabIndex = 33
+        Me.btnAceptar.Size = New System.Drawing.Size(114, 24)
+        Me.btnAceptar.TabIndex = 85
         Me.btnAceptar.Text = "Aceptar"
-        Me.btnAceptar.UseVisualStyleBackColor = True
+        Me.btnAceptar.UseVisualStyleBackColor = False
         '
         'detServicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Wheat
+        Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(362, 202)
+        Me.Controls.Add(Me.btnCancelar)
+        Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.txtDescripcion)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -158,8 +168,6 @@ Partial Class detServicio
         Me.Controls.Add(Me.txtIdReserva)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.dtpFecha)
-        Me.Controls.Add(Me.btnCancelar)
-        Me.Controls.Add(Me.btnAceptar)
         Me.MaximizeBox = False
         Me.Name = "detServicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

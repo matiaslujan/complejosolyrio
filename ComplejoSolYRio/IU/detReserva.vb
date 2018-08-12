@@ -92,7 +92,7 @@
         End If
     End Sub
 
-    Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
 
 
         Dim reserva As New ReservaClass
@@ -137,13 +137,13 @@
 
     End Sub
 
-    Private Sub btnSalir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnSalir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSalir.Click
 
         Close()
 
     End Sub
 
-    Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
 
         Dim servicios As New detServicio(dgvServiciosReserva, txtId.Text)
 
@@ -169,20 +169,20 @@
 
     End Sub
 
-    Private Sub dgvServiciosReserva_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
+    Private Sub dgvServiciosReserva_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvServiciosReserva.CellDoubleClick
 
         modificar()
 
     End Sub
 
-    Private Sub btnModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
 
         modificar()
 
     End Sub
 
 
-    Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
 
         Dim servres As New ServicioClass
 
@@ -195,24 +195,24 @@
     End Sub
 
 
-    Private Sub btnCalcular_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnCalcular_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCalcular.Click
 
         txtTotal.Text = txtCantDia.Text * txtImpDia.Text
 
     End Sub
 
-    Private Sub dtpFechaEgreso_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub dtpFechaEgreso_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpFechaEgreso.ValueChanged
 
         txtCantDia.Text = DateDiff(DateInterval.Day, CDate(dtpFechaIngreso.Text), CDate(dtpFechaEgreso.Text))
 
     End Sub
-    Private Sub dtpFechaIngreso_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub dtpFechaIngreso_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpFechaIngreso.ValueChanged
 
         txtCantDia.Text = DateDiff(DateInterval.Day, CDate(dtpFechaIngreso.Text), CDate(dtpFechaEgreso.Text))
 
     End Sub
 
-    Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
 
         Dim det As New detCliente(cbClientes)
         det.ShowDialog()

@@ -32,8 +32,8 @@ Partial Class detCliente
         Me.txtTelefono = New System.Windows.Forms.TextBox
         Me.txtDomicilio = New System.Windows.Forms.TextBox
         Me.txtNombre = New System.Windows.Forms.TextBox
-        Me.btnSalir = New System.Windows.Forms.Button
         Me.btnAceptar = New System.Windows.Forms.Button
+        Me.btnCancelar = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'Label5
@@ -127,33 +127,39 @@ Partial Class detCliente
         Me.txtNombre.TabIndex = 13
         Me.txtNombre.Tag = "Validar"
         '
-        'btnSalir
-        '
-        Me.btnSalir.BackColor = System.Drawing.SystemColors.Control
-        Me.btnSalir.Location = New System.Drawing.Point(230, 185)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(100, 30)
-        Me.btnSalir.TabIndex = 82
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = False
-        '
         'btnAceptar
         '
-        Me.btnAceptar.BackColor = System.Drawing.SystemColors.Control
-        Me.btnAceptar.Location = New System.Drawing.Point(54, 185)
+        Me.btnAceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAceptar.Location = New System.Drawing.Point(47, 185)
         Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(100, 30)
-        Me.btnAceptar.TabIndex = 81
+        Me.btnAceptar.Size = New System.Drawing.Size(114, 30)
+        Me.btnAceptar.TabIndex = 83
         Me.btnAceptar.Text = "Aceptar"
         Me.btnAceptar.UseVisualStyleBackColor = False
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelar.Location = New System.Drawing.Point(206, 185)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(114, 30)
+        Me.btnCancelar.TabIndex = 84
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = False
         '
         'detCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Wheat
-        Me.ClientSize = New System.Drawing.Size(370, 241)
-        Me.Controls.Add(Me.btnSalir)
+        Me.BackColor = System.Drawing.Color.Gainsboro
+        Me.ClientSize = New System.Drawing.Size(379, 237)
+        Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtId)
@@ -183,6 +189,6 @@ Partial Class detCliente
     Friend WithEvents txtTelefono As System.Windows.Forms.TextBox
     Friend WithEvents txtDomicilio As System.Windows.Forms.TextBox
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
-    Friend WithEvents btnSalir As System.Windows.Forms.Button
     Friend WithEvents btnAceptar As System.Windows.Forms.Button
+    Friend WithEvents btnCancelar As System.Windows.Forms.Button
 End Class
