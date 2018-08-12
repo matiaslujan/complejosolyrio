@@ -28,6 +28,7 @@ Partial Class listClientes
         Me.btnModificar = New System.Windows.Forms.Button
         Me.txtBuscar = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
+        Me.btnHistorial = New System.Windows.Forms.Button
         CType(Me.dgvClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -108,12 +109,27 @@ Partial Class listClientes
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Buscar"
         '
+        'btnHistorial
+        '
+        Me.btnHistorial.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnHistorial.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnHistorial.FlatAppearance.BorderSize = 0
+        Me.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver
+        Me.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHistorial.Location = New System.Drawing.Point(381, 277)
+        Me.btnHistorial.Name = "btnHistorial"
+        Me.btnHistorial.Size = New System.Drawing.Size(120, 28)
+        Me.btnHistorial.TabIndex = 14
+        Me.btnHistorial.Text = "Historial"
+        Me.btnHistorial.UseVisualStyleBackColor = False
+        '
         'listClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkOrange
         Me.ClientSize = New System.Drawing.Size(779, 314)
+        Me.Controls.Add(Me.btnHistorial)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.dgvClientes)
@@ -135,4 +151,5 @@ Partial Class listClientes
     Friend WithEvents btnModificar As System.Windows.Forms.Button
     Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnHistorial As System.Windows.Forms.Button
 End Class

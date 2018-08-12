@@ -88,6 +88,12 @@
     <Compile Include="IU\detServicio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="IU\Historial.Designer.vb">
+      <DependentUpon>Historial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\Historial.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="IU\Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IU\detServicio.resx">
       <DependentUpon>detServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\Historial.resx">
+      <DependentUpon>Historial.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>

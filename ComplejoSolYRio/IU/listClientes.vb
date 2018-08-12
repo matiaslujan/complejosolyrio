@@ -69,4 +69,13 @@
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
 
     End Sub
+
+    Private Sub btnHistorial_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnHistorial.Click
+        Dim id As Integer = dgvClientes.CurrentRow.Cells("Id").Value
+
+        Dim h As New Historial(id)
+
+        h.ShowDialog()
+
+    End Sub
 End Class

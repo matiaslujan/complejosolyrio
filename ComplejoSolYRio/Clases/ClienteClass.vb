@@ -197,4 +197,26 @@ Public Class ClienteClass
         Desconectar()
 
     End Sub
+
+    Public Sub Historial(ByVal id As Integer, ByVal dgv As DataGridView)
+
+        Conectar()
+
+
+        Dim consulta As String = "SELECT r.Id, r.FIngreso Ingreso, r.FEgreso Egreso FROM Reservas r  " _
+        & "inner join Clientes c on c.Id = r.IdCliente WHERE c.Id = @Id"
+
+        Dim comando As New SqlCommand(consulta, conexion)
+
+        comando.Parameters.AddWithValue("@Id", id)
+
+        Dim table As New Data.DataTable
+        Dim lista As New SqlDataAdapter(comando)
+        lista.Fill(table)
+
+        dgv.DataSource = table
+
+        Desconectar()
+
+    End Sub
 End Class

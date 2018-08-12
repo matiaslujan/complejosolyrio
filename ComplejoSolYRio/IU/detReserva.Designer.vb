@@ -79,7 +79,7 @@ Partial Class detReserva
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(93, 119)
+        Me.Label15.Location = New System.Drawing.Point(237, 119)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(44, 20)
         Me.Label15.TabIndex = 162
@@ -89,7 +89,7 @@ Partial Class detReserva
         '
         Me.txtTotal.Enabled = False
         Me.txtTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTotal.Location = New System.Drawing.Point(143, 119)
+        Me.txtTotal.Location = New System.Drawing.Point(287, 119)
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.ReadOnly = True
         Me.txtTotal.Size = New System.Drawing.Size(69, 26)
@@ -117,7 +117,7 @@ Partial Class detReserva
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(235, 119)
+        Me.Label13.Location = New System.Drawing.Point(411, 119)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(57, 20)
         Me.Label13.TabIndex = 158
@@ -127,7 +127,7 @@ Partial Class detReserva
         '
         Me.txtDeuda.Enabled = False
         Me.txtDeuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDeuda.Location = New System.Drawing.Point(298, 119)
+        Me.txtDeuda.Location = New System.Drawing.Point(474, 119)
         Me.txtDeuda.Name = "txtDeuda"
         Me.txtDeuda.ReadOnly = True
         Me.txtDeuda.Size = New System.Drawing.Size(65, 26)
