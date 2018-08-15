@@ -22,8 +22,8 @@ Partial Class listServicios
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Me.Label14 = New System.Windows.Forms.Label
         Me.txtServiciosTot = New System.Windows.Forms.TextBox
         Me.dgvServiciosReserva = New System.Windows.Forms.DataGridView
@@ -59,14 +59,14 @@ Partial Class listServicios
         Me.dgvServiciosReserva.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvServiciosReserva.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvServiciosReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvServiciosReserva.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvServiciosReserva.DefaultCellStyle = DataGridViewCellStyle5
         Me.dgvServiciosReserva.Dock = System.Windows.Forms.DockStyle.Top
         Me.dgvServiciosReserva.GridColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.dgvServiciosReserva.Location = New System.Drawing.Point(0, 0)
@@ -74,8 +74,8 @@ Partial Class listServicios
         Me.dgvServiciosReserva.Name = "dgvServiciosReserva"
         Me.dgvServiciosReserva.ReadOnly = True
         Me.dgvServiciosReserva.RowHeadersVisible = False
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
-        Me.dgvServiciosReserva.RowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        Me.dgvServiciosReserva.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.dgvServiciosReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvServiciosReserva.Size = New System.Drawing.Size(485, 155)
         Me.dgvServiciosReserva.TabIndex = 164
@@ -146,6 +146,7 @@ Partial Class listServicios
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.btnAgregar)
         Me.Name = "listServicios"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "listServicios"
         CType(Me.dgvServiciosReserva, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

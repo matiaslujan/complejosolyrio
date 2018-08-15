@@ -79,15 +79,9 @@
             txtDescripcion.Text = Reserva.Descripcion
             CbxCancelada.Checked = Reserva.Cancelada
 
-            'Dim servres As New ServicioClass
+         
 
-            'servres.Traer(dgvServiciosReserva, Reserva.Id)
-
-            'Else
-
-            '    btnAgregar.Enabled = False
-            '    btnModificar.Enabled = False
-            '    btnEliminar.Enabled = False
+            
 
         End If
     End Sub
@@ -166,6 +160,15 @@
 
         Dim det As New detCliente(cbClientes)
         det.ShowDialog()
+
+
+    End Sub
+
+    Private Sub btnServicios_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnServicios.Click
+
+        Dim s As New listServicios(txtId.Text)
+
+        s.ShowDialog()
 
 
     End Sub

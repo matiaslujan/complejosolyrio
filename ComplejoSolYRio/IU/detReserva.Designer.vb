@@ -22,10 +22,10 @@ Partial Class detReserva
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Me.Label15 = New System.Windows.Forms.Label
         Me.txtTotal = New System.Windows.Forms.TextBox
         Me.Label13 = New System.Windows.Forms.Label
@@ -67,6 +67,7 @@ Partial Class detReserva
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
+        Me.btnServicios = New System.Windows.Forms.Button
         CType(Me.dgvPagos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAlojamientos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -88,14 +89,14 @@ Partial Class detReserva
         Me.txtTotal.Location = New System.Drawing.Point(143, 183)
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.ReadOnly = True
-        Me.txtTotal.Size = New System.Drawing.Size(104, 26)
+        Me.txtTotal.Size = New System.Drawing.Size(112, 26)
         Me.txtTotal.TabIndex = 161
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(311, 183)
+        Me.Label13.Location = New System.Drawing.Point(375, 183)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(57, 20)
         Me.Label13.TabIndex = 158
@@ -105,7 +106,7 @@ Partial Class detReserva
         '
         Me.txtDeuda.Enabled = False
         Me.txtDeuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDeuda.Location = New System.Drawing.Point(374, 183)
+        Me.txtDeuda.Location = New System.Drawing.Point(438, 183)
         Me.txtDeuda.Name = "txtDeuda"
         Me.txtDeuda.ReadOnly = True
         Me.txtDeuda.Size = New System.Drawing.Size(111, 26)
@@ -114,7 +115,7 @@ Partial Class detReserva
         'Pagado
         '
         Me.Pagado.AutoSize = True
-        Me.Pagado.Location = New System.Drawing.Point(810, 347)
+        Me.Pagado.Location = New System.Drawing.Point(829, 347)
         Me.Pagado.Name = "Pagado"
         Me.Pagado.Size = New System.Drawing.Size(44, 13)
         Me.Pagado.TabIndex = 156
@@ -123,7 +124,7 @@ Partial Class detReserva
         'txtPagado
         '
         Me.txtPagado.Enabled = False
-        Me.txtPagado.Location = New System.Drawing.Point(804, 324)
+        Me.txtPagado.Location = New System.Drawing.Point(823, 324)
         Me.txtPagado.Name = "txtPagado"
         Me.txtPagado.ReadOnly = True
         Me.txtPagado.Size = New System.Drawing.Size(50, 20)
@@ -133,7 +134,7 @@ Partial Class detReserva
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(678, 190)
+        Me.Label9.Location = New System.Drawing.Point(697, 190)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 18)
         Me.Label9.TabIndex = 154
@@ -145,22 +146,22 @@ Partial Class detReserva
         Me.dgvPagos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPagos.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvPagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvPagos.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvPagos.DefaultCellStyle = DataGridViewCellStyle5
         Me.dgvPagos.GridColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.dgvPagos.Location = New System.Drawing.Point(565, 216)
+        Me.dgvPagos.Location = New System.Drawing.Point(584, 216)
         Me.dgvPagos.MultiSelect = False
         Me.dgvPagos.Name = "dgvPagos"
         Me.dgvPagos.ReadOnly = True
         Me.dgvPagos.RowHeadersVisible = False
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.White
-        Me.dgvPagos.RowsDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        Me.dgvPagos.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.dgvPagos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvPagos.Size = New System.Drawing.Size(289, 102)
         Me.dgvPagos.TabIndex = 153
@@ -176,7 +177,7 @@ Partial Class detReserva
         Me.btnEliminarPago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.btnEliminarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminarPago.Location = New System.Drawing.Point(721, 324)
+        Me.btnEliminarPago.Location = New System.Drawing.Point(740, 324)
         Me.btnEliminarPago.Name = "btnEliminarPago"
         Me.btnEliminarPago.Size = New System.Drawing.Size(72, 28)
         Me.btnEliminarPago.TabIndex = 152
@@ -194,7 +195,7 @@ Partial Class detReserva
         Me.btnModificarPago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.btnModificarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificarPago.Location = New System.Drawing.Point(643, 324)
+        Me.btnModificarPago.Location = New System.Drawing.Point(662, 324)
         Me.btnModificarPago.Name = "btnModificarPago"
         Me.btnModificarPago.Size = New System.Drawing.Size(72, 28)
         Me.btnModificarPago.TabIndex = 151
@@ -212,7 +213,7 @@ Partial Class detReserva
         Me.btnAgregarPago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.btnAgregarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarPago.Location = New System.Drawing.Point(565, 324)
+        Me.btnAgregarPago.Location = New System.Drawing.Point(584, 324)
         Me.btnAgregarPago.Name = "btnAgregarPago"
         Me.btnAgregarPago.Size = New System.Drawing.Size(72, 28)
         Me.btnAgregarPago.TabIndex = 150
@@ -223,7 +224,7 @@ Partial Class detReserva
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(668, 9)
+        Me.Label4.Location = New System.Drawing.Point(687, 9)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(105, 18)
         Me.Label4.TabIndex = 149
@@ -235,22 +236,22 @@ Partial Class detReserva
         Me.dgvAlojamientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvAlojamientos.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvAlojamientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvAlojamientos.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvAlojamientos.DefaultCellStyle = DataGridViewCellStyle7
         Me.dgvAlojamientos.GridColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.dgvAlojamientos.Location = New System.Drawing.Point(566, 35)
+        Me.dgvAlojamientos.Location = New System.Drawing.Point(585, 35)
         Me.dgvAlojamientos.MultiSelect = False
         Me.dgvAlojamientos.Name = "dgvAlojamientos"
         Me.dgvAlojamientos.ReadOnly = True
         Me.dgvAlojamientos.RowHeadersVisible = False
-        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
-        Me.dgvAlojamientos.RowsDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
+        Me.dgvAlojamientos.RowsDefaultCellStyle = DataGridViewCellStyle8
         Me.dgvAlojamientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvAlojamientos.Size = New System.Drawing.Size(289, 102)
         Me.dgvAlojamientos.TabIndex = 148
@@ -266,7 +267,7 @@ Partial Class detReserva
         Me.btnEliminarAloj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.btnEliminarAloj.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminarAloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminarAloj.Location = New System.Drawing.Point(722, 143)
+        Me.btnEliminarAloj.Location = New System.Drawing.Point(741, 143)
         Me.btnEliminarAloj.Name = "btnEliminarAloj"
         Me.btnEliminarAloj.Size = New System.Drawing.Size(72, 28)
         Me.btnEliminarAloj.TabIndex = 147
@@ -284,7 +285,7 @@ Partial Class detReserva
         Me.btnModificarAloj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.btnModificarAloj.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificarAloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificarAloj.Location = New System.Drawing.Point(644, 143)
+        Me.btnModificarAloj.Location = New System.Drawing.Point(663, 143)
         Me.btnModificarAloj.Name = "btnModificarAloj"
         Me.btnModificarAloj.Size = New System.Drawing.Size(72, 28)
         Me.btnModificarAloj.TabIndex = 146
@@ -302,7 +303,7 @@ Partial Class detReserva
         Me.btnAgregarAloj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.btnAgregarAloj.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregarAloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarAloj.Location = New System.Drawing.Point(566, 143)
+        Me.btnAgregarAloj.Location = New System.Drawing.Point(585, 143)
         Me.btnAgregarAloj.Name = "btnAgregarAloj"
         Me.btnAgregarAloj.Size = New System.Drawing.Size(72, 28)
         Me.btnAgregarAloj.TabIndex = 145
@@ -373,7 +374,7 @@ Partial Class detReserva
         Me.dtpFecha.Enabled = False
         Me.dtpFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFecha.Location = New System.Drawing.Point(440, 12)
+        Me.dtpFecha.Location = New System.Drawing.Point(438, 12)
         Me.dtpFecha.Name = "dtpFecha"
         Me.dtpFecha.Size = New System.Drawing.Size(111, 26)
         Me.dtpFecha.TabIndex = 133
@@ -382,7 +383,7 @@ Partial Class detReserva
         '
         Me.dtpFechaEgreso.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpFechaEgreso.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaEgreso.Location = New System.Drawing.Point(374, 56)
+        Me.dtpFechaEgreso.Location = New System.Drawing.Point(438, 56)
         Me.dtpFechaEgreso.Name = "dtpFechaEgreso"
         Me.dtpFechaEgreso.Size = New System.Drawing.Size(111, 26)
         Me.dtpFechaEgreso.TabIndex = 132
@@ -449,7 +450,7 @@ Partial Class detReserva
         'txtImpEstadia
         '
         Me.txtImpEstadia.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtImpEstadia.Location = New System.Drawing.Point(374, 141)
+        Me.txtImpEstadia.Location = New System.Drawing.Point(438, 141)
         Me.txtImpEstadia.Name = "txtImpEstadia"
         Me.txtImpEstadia.Size = New System.Drawing.Size(112, 26)
         Me.txtImpEstadia.TabIndex = 127
@@ -465,7 +466,7 @@ Partial Class detReserva
         'txtCantDia
         '
         Me.txtCantDia.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCantDia.Location = New System.Drawing.Point(374, 100)
+        Me.txtCantDia.Location = New System.Drawing.Point(438, 100)
         Me.txtCantDia.Name = "txtCantDia"
         Me.txtCantDia.Size = New System.Drawing.Size(111, 26)
         Me.txtCantDia.TabIndex = 125
@@ -482,7 +483,7 @@ Partial Class detReserva
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(299, 141)
+        Me.Label10.Location = New System.Drawing.Point(363, 141)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(69, 20)
         Me.Label10.TabIndex = 123
@@ -492,7 +493,7 @@ Partial Class detReserva
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(270, 100)
+        Me.Label8.Location = New System.Drawing.Point(334, 100)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(98, 20)
         Me.Label8.TabIndex = 122
@@ -502,7 +503,7 @@ Partial Class detReserva
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(308, 56)
+        Me.Label7.Location = New System.Drawing.Point(372, 56)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(60, 20)
         Me.Label7.TabIndex = 121
@@ -552,11 +553,22 @@ Partial Class detReserva
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(380, 12)
+        Me.Label1.Location = New System.Drawing.Point(378, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(54, 20)
         Me.Label1.TabIndex = 116
         Me.Label1.Text = "Fecha"
+        '
+        'btnServicios
+        '
+        Me.btnServicios.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnServicios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnServicios.Location = New System.Drawing.Point(331, 336)
+        Me.btnServicios.Name = "btnServicios"
+        Me.btnServicios.Size = New System.Drawing.Size(75, 23)
+        Me.btnServicios.TabIndex = 163
+        Me.btnServicios.Text = "Servicios"
+        Me.btnServicios.UseVisualStyleBackColor = False
         '
         'detReserva
         '
@@ -564,6 +576,7 @@ Partial Class detReserva
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(898, 439)
+        Me.Controls.Add(Me.btnServicios)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.txtTotal)
         Me.Controls.Add(Me.Label13)
@@ -655,4 +668,5 @@ Partial Class detReserva
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnServicios As System.Windows.Forms.Button
 End Class
